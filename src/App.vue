@@ -11,9 +11,9 @@ export default {
     return {
       tabs: [
         { text: 'Accueil', route: '/' },
-        { text: 'A propos', route: '/about' },
-        { text: 'Services', route: '/services' },
-        { text: 'Contact', route: '/contact' },
+        { text: 'A propos', route: 'about' },
+        { text: 'Alexis le plus fort', route: 'services' },
+        { text: 'Alexis le plus beau', route: 'contact' },
       ]
     }
   },
