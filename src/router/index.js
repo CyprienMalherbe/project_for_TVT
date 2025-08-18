@@ -2,14 +2,22 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 
 // Pages
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Services from '../views/Services.vue'
+import Club from '../views/Club.vue'
+import School from '../views/School.vue'
 import Contact from '../views/Contact.vue'
+import Adults from '../views/Adults.vue'
+import Events from '../views/Events.vue'
+import Licenses from '../views/Licenses.vue'
+import Clothing from '../views/Clothing.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/about', name: 'About', component: About },
-  { path: '/services', name: 'Services', component: Services },
+  { path: '/club', name: 'Club', component: Club },
+  { path: '/school', name: 'School', component: School },
+  { path: '/adults', name: 'Adults', component: Adults },
+  { path: '/events', name: 'Events', component: Events },
+  { path: '/licenses', name: 'Licenses', component: Licenses },
+  { path: '/clothing', name: 'Clothing', component: Clothing },
   { path: '/contact', name: 'Contact', component: Contact }
 ]
 
