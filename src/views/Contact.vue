@@ -84,9 +84,8 @@ export default {
             v-model="message"
             :rules="messageRules"
             label="Votre message"
-            auto-grow
+            rows="6"
             outlined
-            clearable
             prepend-inner-icon="mdi-message-text"
           />
           <v-btn

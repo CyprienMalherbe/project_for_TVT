@@ -1,14 +1,23 @@
 <script>
+import Presentation from './Presentation.vue'
+import Join from './Join.vue';
+
 export default {
   name: 'Home',
+  components: {
+    Presentation,
+    Join,
+  },
 }
 </script>
 
 <template>
   <div class="home">
     <div class="overlay-content">
-      <h1>Bienvenue</h1>
-      <p>Ce texte se déplace vers le haut au scroll ✨</p>
+      <div class="spacer"></div>
+      <Join />
+      <div class="spacer"></div>
+      <Presentation />
     </div>
   </div>
 </template>
@@ -16,7 +25,7 @@ export default {
 <style scoped>
 .home {
   height: 200vh;
-  background-image: url('@/assets/everybody.png');
+  background-image: url('@/assets/everybody.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -37,4 +46,8 @@ export default {
   background: rgba(0, 0, 0, 0.2);
   z-index: 0;
 }
+.spacer {
+  height: 15vh;
+}
 </style>
+

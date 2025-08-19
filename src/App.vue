@@ -11,46 +11,50 @@ export default {
     return {
       logo: { text: 'Accueil', route: '/', icon: logoImg },
       tabs: [
-        { text: 'Le club', route: 'club', icon: '' },
-        { text: 'École de triathlon', route: 'school', icon: '' },
-        { text: 'Adultes', route: 'adults', icon: '' },
-        { text: 'Événements', route: 'events', icon: '' },
-        { text: 'Licences', route: 'licenses', icon: '' },
-        { text: 'Textiles', route: 'clothing', icon: '' },
+        { text: 'Le club', route: 'club' },
+        { text: 'École de triathlon', route: 'school' },
+        { text: 'Adultes', route: 'adults' },
+        { text: 'Événements', route: 'events' },
+        { text: 'Licences', route: 'licenses' },
+        { text: 'Textiles', route: 'clothing' },
       ],
-      contact: { text: 'Contactez-nous', route: 'contact', icon: '' },
+      contact: { text: 'Contactez-nous', route: 'contact' },
+      activeTab: null,
     }
   },
+  methods: {
+    resetTabs() {
+      this.activeTab = null
+    }
+  }
 }
 </script>
 
 <template>
   <div class="toolbar">
-    <v-tab :to="logo.route">
+    <v-tab :to="logo.route" @click="resetTabs">
       <img
         :src="logo.icon"
         class="logo-img"
       />
     </v-tab>
-    <v-tabs>
+    <v-tabs v-model="activeTab" slider-color="transparent">
       <v-tab
         v-for="tab in tabs"
         :key="tab.route"
         :to="tab.route"
         :text="tab.text"
-        slider-color="blue"
         size="x-small"
       />
       <v-tab
         :to="contact.route"
         :text="contact.text"
-        slider-color="blue"
         size="x-small"
         base-color="blue"
       />
     </v-tabs>
   </div>
-  <main class="main-content">
+  <main class="main-content" @click="resetTabs">
     <RouterView />
   </main>
 </template>
@@ -69,6 +73,6 @@ export default {
 }
 .main-content {
   min-height: calc(100vh - 48px);
-  background-color: rgb(33,150,243);
+  background-color: rgb(33, 150, 243);
 }
 </style>
