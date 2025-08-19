@@ -1,11 +1,10 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import logoImg from './assets/logo.png'
 
 export default {
   name: 'App',
   components: {
-    RouterLink,
     RouterView,
   },
   data () {
@@ -18,8 +17,8 @@ export default {
         { text: 'Événements', route: 'events', icon: '' },
         { text: 'Licences', route: 'licenses', icon: '' },
         { text: 'Textiles', route: 'clothing', icon: '' },
-        { text: 'Contactez-nous', route: 'contact', icon: '' },
-      ]
+      ],
+      contact: { text: 'Contactez-nous', route: 'contact', icon: '' },
     }
   },
 }
@@ -27,28 +26,28 @@ export default {
 
 <template>
   <div class="toolbar">
-    <v-tab
-      :to="logo.route"
-      replace
-      tag="RouterLink"
-    >
+    <v-tab :to="logo.route">
       <img
         :src="logo.icon"
         class="logo-img"
       />
     </v-tab>
-    <v-tabs
-      class="tabs-right"
-    >
+    <v-tabs>
       <v-tab
         v-for="tab in tabs"
         :key="tab.route"
         :to="tab.route"
-        replace
-        tag="RouterLink"
-      >
-        {{ tab.text }}
-      </v-tab>
+        :text="tab.text"
+        slider-color="blue"
+        size="x-small"
+      />
+      <v-tab
+        :to="contact.route"
+        :text="contact.text"
+        slider-color="blue"
+        size="x-small"
+        base-color="blue"
+      />
     </v-tabs>
   </div>
   <main class="main-content">
@@ -69,7 +68,7 @@ export default {
   width: auto;
 }
 .main-content {
-  height: calc(100vh - 48px);
-  background-color: rgb(247, 247, 247);
+  min-height: calc(100vh - 48px);
+  background-color: rgb(33,150,243);
 }
 </style>

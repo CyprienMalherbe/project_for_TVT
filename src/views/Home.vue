@@ -6,7 +6,6 @@ export default {
 
 <template>
   <div class="home">
-    <!-- Contenu flottant -->
     <div class="overlay-content">
       <h1>Bienvenue</h1>
       <p>Ce texte se déplace vers le haut au scroll ✨</p>
@@ -16,11 +15,11 @@ export default {
 
 <style scoped>
 .home {
-  height: 200vh; /* page plus grande pour pouvoir scroller */
+  height: 200vh;
   background-image: url('@/assets/everybody.png');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* effet parallax sur le fond */
+  background-attachment: fixed;
   position: relative;
 }
 .overlay-content {
