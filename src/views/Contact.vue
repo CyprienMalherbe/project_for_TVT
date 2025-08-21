@@ -35,10 +35,10 @@ export default {
       };
       try {
         await emailjs.send(
-          "service_ae51c2f",   // Remplace par ton Service ID
+          "service_s22jnap",   // Remplace par ton Service ID
           "template_p9eqx0b",  // Remplace par ton Template ID
           templateParams,
-          "a6of-D6Anr9iC5Rx8"      // Remplace par ta Public Key
+          "BSQXK2yltHX51zSUP"      // Remplace par ta Public Key
         )
         alert("✅ Message envoyé avec succès !")
         this.names = ""
