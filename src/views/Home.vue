@@ -17,7 +17,7 @@ export default {
         new URL('@/assets/carousel6.jpg', import.meta.url).href,
       ]
     }
-  }
+  },
 }
 </script>
 

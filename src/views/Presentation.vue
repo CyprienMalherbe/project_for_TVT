@@ -23,7 +23,6 @@ export default {
 
 <template>
   <h2>Nos différentes sections</h2>
-  <div class="spacer"></div>
   <div class="cards-section">
     <v-card
       v-for="card in cards"
@@ -43,6 +42,7 @@ export default {
 
 <style scoped>
 .cards-section {
+  margin-top: 4vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
@@ -53,16 +53,27 @@ export default {
   max-width: 25vw;
   height: 25vh;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 .card:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 .title {
   font-size: 40px;
-}
-.spacer {
-  height: 4vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-align: center;
 }
 </style>
 

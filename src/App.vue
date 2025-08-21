@@ -60,7 +60,7 @@ export default {
 
 <style scoped>
 .toolbar {
-  position: fixed; /* fixe en haut */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -69,8 +69,8 @@ export default {
   justify-content: space-between;
   background-color: rgb(247, 247, 247);
   padding: 0 2rem;
-  height: 48px; /* nécessaire pour le calcul du main */
-  z-index: 10; /* au-dessus du carousel et overlay */
+  height: 48px;
+  z-index: 10;
 }
 .logo-img {
   height: 40px;
@@ -79,6 +79,13 @@ export default {
 .main-content {
   min-height: calc(100vh - 48px); /* prend en compte la hauteur de la toolbar */
   margin-top: 48px; /* repousse le contenu sous la toolbar */
-  background-color: rgb(33, 150, 243);
+  background: linear-gradient(
+    to bottom,
+    rgb(33, 150, 243) 0%,
+    rgb(25, 110, 190) 25%,
+    rgb(15, 70, 130) 55%,
+    rgb(6, 38, 72) 75%,
+    #000 100%
+  );
 }
 </style>
