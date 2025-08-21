@@ -2,7 +2,7 @@
 import youngImg from '@/assets/young.jpg'
 import adultsImg from '@/assets/adults.jpg'
 import licencedImg from '@/assets/licenced.jpg'
-import clothesImg from '@/assets/clothing.jpg'
+import clothesImg from '@/assets/clothing.png'
 import eventImg from '@/assets/events.jpg'
 
 export default {
@@ -14,7 +14,7 @@ export default {
         { title: 'Jeunes', image: youngImg, route: 'school' },
         { title: 'Événements', image: eventImg, route: 'events' },
         { title: 'Licences', image: licencedImg, route: 'licenses' },
-        { title: 'Textiles', image: clothesImg, route: 'clothing' },
+        { title: 'Textiles', image: clothesImg, url: 'https://www.strayde.shop/foulees-louviers/c15-team-val-eure-triathlon' },
       ],
     }
   },
@@ -34,8 +34,7 @@ export default {
       height="25vh"
       rounded="xl"
       :image="card.image"
-      hover="true"
-      :to="card.route"
+      v-bind="card.route ? { to: card.route } : { href: card.url, target: '_blank', rel: 'noopener' }"
     >
       <v-card-title class="title">{{ card.title }}</v-card-title>
     </v-card>

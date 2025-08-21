@@ -8,7 +8,6 @@ import Contact from '../views/Contact.vue'
 import Adults from '../views/Adults.vue'
 import Events from '../views/Events.vue'
 import Licenses from '../views/Licenses.vue'
-import Clothing from '../views/Clothing.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -17,8 +16,7 @@ const routes = [
   { path: '/adults', name: 'Adults', component: Adults },
   { path: '/events', name: 'Events', component: Events },
   { path: '/licenses', name: 'Licenses', component: Licenses },
-  { path: '/clothing', name: 'Clothing', component: Clothing },
-  { path: '/contact', name: 'Contact', component: Contact }
+  { path: '/contact', name: 'Contact', component: Contact },
 ]
 
 const router = createRouter({

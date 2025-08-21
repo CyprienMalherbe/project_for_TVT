@@ -11,12 +11,11 @@ export default {
     return {
       logo: { text: 'Accueil', route: '/', icon: logoImg },
       tabs: [
-        { text: 'Le club', route: 'club' },
-        { text: 'École de triathlon', route: 'school' },
         { text: 'Adultes', route: 'adults' },
+        { text: 'École de triathlon', route: 'school' },
         { text: 'Événements', route: 'events' },
         { text: 'Licences', route: 'licenses' },
-        { text: 'Textiles', route: 'clothing' },
+        { text: 'Textiles', url: 'https://www.strayde.shop/foulees-louviers/c15-team-val-eure-triathlon' },
       ],
       contact: { text: 'Contactez-nous', route: 'contact' },
       activeTab: null,
@@ -42,7 +41,7 @@ export default {
       <v-tab
         v-for="tab in tabs"
         :key="tab.route"
-        :to="tab.route"
+        v-bind="tab.route ? { to: tab.route, text: tab.text } : { href: tab.url, text: tab.text, target: '_blank', rel: 'noopener' }"
         :text="tab.text"
         size="x-small"
       />
