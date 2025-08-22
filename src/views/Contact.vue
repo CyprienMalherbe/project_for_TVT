@@ -1,5 +1,8 @@
 <script>
 import emailjs from 'emailjs-com'
+const EMAILJS_KEY = import.meta.env.VITE_EMAIL_JS_KEY
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID
 
 export default {
   name: "Contact",
@@ -35,10 +38,10 @@ export default {
       };
       try {
         await emailjs.send(
-          "service_s22jnap",   // Remplace par ton Service ID
-          "template_p9eqx0b",  // Remplace par ton Template ID
+          SERVICE_ID,   // Remplace par ton Service ID
+          TEMPLATE_ID,  // Remplace par ton Template ID
           templateParams,
-          "BSQXK2yltHX51zSUP"      // Remplace par ta Public Key
+          EMAILJS_KEY      // Remplace par ta Public Key
         )
         alert("✅ Message envoyé avec succès !")
         this.names = ""

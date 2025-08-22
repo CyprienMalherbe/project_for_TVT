@@ -23,50 +23,46 @@ export default {
 
 <template>
   <div>
-    <v-carousel
-      cycle
-      hide-delimiter-background
-      :show-arrows="false"
-      class="carousel-bg"
-      height="100vh"
-    >
-      <v-carousel-item
-        v-for="(img, i) in images"
-        :key="i"
-        class="carousel-item"
+    <div class="carousel-container">
+      <v-carousel
+        cycle
+        hide-delimiter-background
+        :show-arrows="false"
+        height="100vh"
       >
-        <v-img :src="img" cover style="height: 100%;" />
-      </v-carousel-item>
-    </v-carousel>
-    <div class="overlay-content">
-      <div class="spacer"></div>
-      <Join />
-      <div class="spacer"></div>
-      <Presentation />
+        <v-carousel-item
+          v-for="(img, i) in images"
+          :key="i"
+        >
+          <v-img :src="img" cover height="100vh" />
+        </v-carousel-item>
+      </v-carousel>
+      <div class="overlay-content">
+        <Join />
+      </div>
     </div>
+    <Presentation />
   </div>
 </template>
 
 <style scoped>
-.carousel-bg {
-  position: fixed;
-  top: 48px;
-  left: 0;
+.carousel-container {
+  position: relative;
   width: 100%;
-  height: calc(100vh - 48px);
-  z-index: 0;
-}
-.carousel-item {
   height: 100vh;
 }
 .overlay-content {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   z-index: 2;
   color: white;
   text-align: center;
-  padding-top: 48px;
-}
-.spacer {
-  height: 15vh;
 }
 </style>
