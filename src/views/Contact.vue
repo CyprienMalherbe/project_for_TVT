@@ -38,10 +38,10 @@ export default {
       };
       try {
         await emailjs.send(
-          SERVICE_ID,   // Remplace par ton Service ID
-          TEMPLATE_ID,  // Remplace par ton Template ID
+          SERVICE_ID,
+          TEMPLATE_ID,
           templateParams,
-          EMAILJS_KEY      // Remplace par ta Public Key
+          EMAILJS_KEY
         )
         alert("✅ Message envoyé avec succès !")
         this.names = ""

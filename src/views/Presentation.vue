@@ -22,7 +22,7 @@ export default {
 </script>
 
 <template>
-  <h2>Nos différentes sections</h2>
+  <h2 class="big-title">Nos différentes sections</h2>
   <div class="cards-section">
     <v-card
       v-for="card in cards"
@@ -41,6 +41,12 @@ export default {
 </template>
 
 <style scoped>
+.big-title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+}
 .cards-section {
   margin-top: 4vh;
   display: grid;

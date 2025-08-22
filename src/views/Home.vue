@@ -26,7 +26,7 @@ export default {
     <div class="carousel-container">
       <v-carousel
         cycle
-        hide-delimiter-background
+        hide-delimiters
         :show-arrows="false"
         height="100vh"
       >
@@ -34,7 +34,7 @@ export default {
           v-for="(img, i) in images"
           :key="i"
         >
-          <v-img :src="img" cover height="100vh" />
+          <v-img :src="img" cover class="image" />
         </v-carousel-item>
       </v-carousel>
       <div class="overlay-content">
@@ -46,10 +46,13 @@ export default {
 </template>
 
 <style scoped>
+.image {
+  height: calc(100vh - 48px);
+}
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 48px);
 }
 .overlay-content {
   position: absolute;
