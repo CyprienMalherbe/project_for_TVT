@@ -1,11 +1,13 @@
 <script>
 import { RouterView } from 'vue-router'
+import Footer from './views/Footer.vue'
 import logoImg from './assets/logo.png'
 
 export default {
   name: 'App',
   components: {
     RouterView,
+    Footer,
   },
   data () {
     return {
@@ -58,6 +60,7 @@ export default {
   <main class="main-content" @click="resetTabs">
     <RouterView />
   </main>
+  <Footer />
 </template>
 
 <style scoped>
