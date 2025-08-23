@@ -4,6 +4,8 @@ import adultsImg from '@/assets/adults.jpg'
 import licencedImg from '@/assets/licenced.jpg'
 import clothesImg from '@/assets/clothing.png'
 import eventImg from '@/assets/events.jpg'
+import trainingImg from '@/assets/training.jpg'
+import chartImg from '@/assets/chart.jpg'
 
 export default {
   name: 'Presentation',
@@ -12,6 +14,8 @@ export default {
       cards: [
         { title: 'Adultes', image: adultsImg, route: 'adults' },
         { title: 'Jeunes', image: youngImg, route: 'school' },
+        { title: 'Organigramme', image: chartImg, route: 'chart' },
+        { title: 'Créneaux', image: trainingImg, route: 'training' },
         { title: 'Événements', image: eventImg, route: 'events' },
         { title: 'Licences', image: licencedImg, route: 'licenses' },
         { title: 'Textiles', image: clothesImg, url: 'https://www.strayde.shop/foulees-louviers/c15-team-val-eure-triathlon' },

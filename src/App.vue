@@ -13,6 +13,8 @@ export default {
       tabs: [
         { text: 'Adultes', route: 'adults' },
         { text: 'École de triathlon', route: 'school' },
+        { text: 'Organigramme', route: 'chart' },
+        { text: 'Créneaux', route: 'training' },
         { text: 'Événements', route: 'events' },
         { text: 'Licences', route: 'licenses' },
         { text: 'Textiles', url: 'https://www.strayde.shop/foulees-louviers/c15-team-val-eure-triathlon' },
