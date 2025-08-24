@@ -7,13 +7,51 @@ export default {
 <template>
   <div class="container">
     <h1 class="title">Bienvenue à l'école de triathlon du TVT</h1>
-    <p class="subtitle">Un lieu d'apprentissage et de partage, où tous les petits sauront s'épanouir et blablabla et Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ex, laudantium harum quae perferendis nesciunt quas porro nihil, quisquam doloribus provident explicabo sit sunt debitis dolorum dolorem. Sit, deleniti nihil?</p>
+    <p class="subtitle">
+      Prêt à devenir un super-héros du triathlon ?
+      À l'école de triathlon, c'est comme un jeu ! Des
+      coachs super sympas et diplômés t'apprennent à
+      nager comme un poisson, à pédaler comme un
+      pro du vélo et à courir comme le vent.
+      Même les tout-petits, dès 4 ans, peuvent nous
+      rejoindre pour s'amuser. Et à partir de 6 ans, c'est
+      parti pour les premières compétitions !
+      On te prête même la trifonction, la tenue
+      magique des triathlètes ! Le club paye tes courses
+      et on organise un stage pour encore plus de fun.
+      Alors, prêt à relever le défi ?
+    </p>
     <img class="image" src="@/assets/school.jpg">
-    <p class="subtitle">Un lieu d'apprentissage et de partage, où tous les petits sauront s'épanouir et blablabla et Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla sapiente molestiae, error quae aliquid, veritatis voluptas facere quibusdam quos optio accusamus eveniet voluptatibus nam quidem impedit reiciendis corporis? Id, quis!</p>
+    <p class="subtitle">
+      Le triathlon, ça vous tente ? Venez découvrir
+        notre école de triathlon avec une séance
+        d'essai. C'est l'occasion de rencontrer nos
+        jeunes triathlète et nos entraîneurs pour se
+        familiariser avec le club et les entraînements. Notez bien la date : la reprise est fixée au
+        <span class="important-date">mercredi 24 septembre</span>.
+    </p>
+    <p class="subtitle">
+      N'hésitez pas à aller faire un tour dans nos différentes rubriques, et notamment
+      la rubrique <RouterLink to="/training" class="link">Créneaux</RouterLink> pour connaître les horaires d'entraînements
+    </p>
   </div>
 </template>
 
 <style scoped>
+.link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #4fc3f7; /* bleu clair par exemple */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.link:hover {
+  color: #82e9de; /* change de couleur au survol */
+}
+.important-date {
+  font-weight: bold;
+  text-decoration: underline;
+}
 .container {
   display: flex;
   flex-direction: column;

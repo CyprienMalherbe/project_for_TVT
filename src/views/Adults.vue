@@ -7,13 +7,49 @@ export default {
 <template>
   <div class="container">
     <h1 class="title">Bienvenue au TVT</h1>
-    <p class="subtitle">Un lieu d'apprentissage et de partage, où tous les petits sauront s'épanouir et blablabla et Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ex, laudantium harum quae perferendis nesciunt quas porro nihil, quisquam doloribus provident explicabo sit sunt debitis dolorum dolorem. Sit, deleniti nihil?</p>
+    <p class="subtitle">Envie de nager, pédaler et courir dans la joie et la
+      bonne humeur ? Que vous soyez novice ou triathlète chevronné, rejoignez la grande famille
+      du TVT ! Chez nous, l'essentiel est de prendre du plaisir. C'est pourquoi nous vous proposons des
+      entraînements pour tous les niveaux, à suivre selon vos envies.
+    </p>
+    <p class="subtitle">
+      Mesdames, n'hésitez plus ! Avec 23 % de femmes, notre club est l'un des plus féminins de la région.
+      C'est le moment de nous rejoindre et partager des moments sportifs et festifs !
+    </p>
+    <p class="subtitle">
+      Tout au long de l'année, nous organisons un stage pour adultes pour progresser ensemble. Pour ceux
+      Dimanchequi ont la fibre compétitrice, le club est fier d'aligner des équipes Hommes et Femmes en Grand Prix.
+    </p>
     <img class="image" src="@/assets/adults-section.jpg">
-    <p class="subtitle">Un lieu d'apprentissage et de partage, où tous les petits sauront s'épanouir et blablabla et Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla sapiente molestiae, error quae aliquid, veritatis voluptas facere quibusdam quos optio accusamus eveniet voluptatibus nam quidem impedit reiciendis corporis? Id, quis!</p>
+    <p class="subtitle">Curieux de découvrir le triathlon avec
+      nous ? Nous vous invitons à participer à
+      une séance d'essai gratuite pour vous
+      familiariser avec le club et les
+      entraînements. Notez bien la date : la reprise est fixée
+      au <span class="important-date">lundi 22 septembre</span>.
+    </p>
+    <p class="subtitle">
+      N'hésitez pas à aller faire un tour dans nos différentes rubriques, et notamment
+      la rubrique <RouterLink to="/training" class="link">Créneaux</RouterLink> pour connaître les horaires d'entraînements
+    </p>
   </div>
 </template>
 
 <style scoped>
+.important-date {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.link {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #4fc3f7; /* bleu clair par exemple */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.link:hover {
+  color: #82e9de; /* change de couleur au survol */
+}
 .container {
   display: flex;
   flex-direction: column;

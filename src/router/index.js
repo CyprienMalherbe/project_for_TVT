@@ -23,7 +23,16 @@ const routes = [
 
 const router = createRouter({
   history: createWebHashHistory('/project_for_TVT/'),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    // si navigation avec "back" ou "forward"
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      // sinon toujours en haut de la page
+      return { top: 0 }
+    }
+  }
 })
 
 export default router
