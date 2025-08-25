@@ -37,35 +37,60 @@ export default {
           <v-img :src="img" cover class="image" />
         </v-carousel-item>
       </v-carousel>
+
+      <!-- Overlay Join -->
       <div class="overlay-content">
         <Join />
       </div>
     </div>
+
+    <!-- Presentation -->
     <Presentation />
   </div>
 </template>
 
 <style scoped>
-.image {
-  height: calc(100vh - 48px);
-}
 .carousel-container {
   position: relative;
   width: 100%;
-  height: calc(100vh - 48px);
+  height: 100vh; /* plein écran desktop */
 }
+
+.image {
+  height: 100%;
+}
+
+/* Overlay Join desktop */
 .overlay-content {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%; /* centré verticalement */
+  left: 5%;  /* à gauche */
+  transform: translateY(-50%);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
   z-index: 2;
   color: white;
-  text-align: center;
+  text-align: left;
+  max-width: 500px;
+}
+
+/* Responsive mobile : recentrer Join */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 60vh; /* réduit la hauteur du carousel sur mobile */
+  }
+
+  .image {
+    height: 60vh;
+  }
+
+  .overlay-content {
+    top: 50%;            /* centré verticalement */
+    left: 50%;           /* centré horizontalement */
+    transform: translate(-50%, -50%);
+    text-align: center;   /* centre le texte */
+    align-items: center;  /* centre le contenu du composant */
+    max-width: 90%;       /* presque toute la largeur */
+  }
 }
 </style>

@@ -4,47 +4,18 @@ export default {
   data() {
     return {
       team: [
-        {
-          name: 'Alice Dupont',
-          role: 'Directrice',
-          email: 'alice.dupont@example.com',
-          image: 'https://i.pravatar.cc/150?img=1'
-        },
-        {
-          name: 'Bob Martin',
-          role: 'Responsable communication',
-          email: 'bob.martin@example.com',
-          image: 'https://i.pravatar.cc/150?img=2'
-        },
-        {
-          name: 'Claire Leroy',
-          role: 'Chargée de projet',
-          email: 'claire.leroy@example.com',
-          image: 'https://i.pravatar.cc/150?img=3'
-        },
-        {
-          name: 'David Petit',
-          role: 'Trésorier',
-          email: 'david.petit@example.com',
-          image: 'https://i.pravatar.cc/150?img=4'
-        },
-        {
-          name: 'Emma Durand',
-          role: 'Secrétaire',
-          email: 'emma.durand@example.com',
-          image: 'https://i.pravatar.cc/150?img=5'
-        },
-        {
-          name: 'François Martin',
-          role: 'Chargé logistique',
-          email: 'francois.martin@example.com',
-          image: 'https://i.pravatar.cc/150?img=6'
-        },
+        { name: 'Alice Dupont', role: 'Directrice', email: 'alice.dupont@example.com', image: 'https://i.pravatar.cc/150?img=1' },
+        { name: 'Bob Martin', role: 'Responsable communication', email: 'bob.martin@example.com', image: 'https://i.pravatar.cc/150?img=2' },
+        { name: 'Claire Leroy', role: 'Chargée de projet', email: 'claire.leroy@example.com', image: 'https://i.pravatar.cc/150?img=3' },
+        { name: 'David Petit', role: 'Trésorier', email: 'david.petit@example.com', image: 'https://i.pravatar.cc/150?img=4' },
+        { name: 'Emma Durand', role: 'Secrétaire', email: 'emma.durand@example.com', image: 'https://i.pravatar.cc/150?img=5' },
+        { name: 'François Martin', role: 'Chargé logistique', email: 'francois.martin@example.com', image: 'https://i.pravatar.cc/150?img=6' },
       ]
     }
   }
 }
 </script>
+
 <template>
   <div class="chart-container">
     <h2 class="chart-title">Notre Bureau</h2>
@@ -68,6 +39,7 @@ export default {
   max-width: 70vw;
   margin: 2rem auto;
   text-align: center;
+  width: 100%;
 }
 
 .chart-title {
@@ -85,6 +57,7 @@ export default {
   justify-items: center;
 }
 
+/* Card styles */
 .team-card {
   background: #fff;
   border-radius: 16px;
@@ -132,5 +105,35 @@ export default {
   font-size: 0.9rem;
   color: #888;
   word-break: break-all;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .cards-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .team-card {
+    width: 90%;
+    padding: 1rem;
+  }
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+  .info h3 {
+    font-size: 1rem;
+  }
+  .info .role {
+    font-size: 0.9rem;
+  }
+  .info .email {
+    font-size: 0.8rem;
+  }
+  .chart-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
 </style>

@@ -5,10 +5,11 @@ export default {
 </script>
 
 <template>
-  <div class="join-wrapper">
+  <div>
     <v-card
       variant="flat"
       class="join-card"
+      max-width="38vw"
     >
       <v-card-title>Rejoignez le Team Val Eure Triathlon</v-card-title>
       <v-card-text class="text">
@@ -30,43 +31,18 @@ export default {
 </template>
 
 <style scoped>
-.join-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-/* Desktop : carte centrée avec max-width */
 .join-card {
   background-color: rgba(0, 0, 0, 0.2);
   color: white;
-  max-width: 38vw;
-  width: 100%;
-  padding: 1rem;
 }
-
 .text {
   text-align: justify;
   text-justify: inter-word;
 }
-
 .btn {
   border-color: rgb(33, 150, 243);
 }
-
 .btn:hover {
   background-color: rgba(33, 150, 243, 0.6);
-}
-
-/* Mobile : full-width sous le carousel */
-@media (max-width: 768px) {
-  .join-wrapper {
-    justify-content: center;
-    width: 100%;
-    padding: 0 1rem;
-  }
-
-  .join-card {
-    max-width: 100%;
-  }
 }
 </style>

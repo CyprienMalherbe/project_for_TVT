@@ -33,8 +33,6 @@ export default {
       class="card"
       color="blue"
       variant="elevated"
-      width="25vw"
-      height="25vh"
       rounded="xl"
       :image="card.image"
       v-bind="card.route ? { to: card.route } : { href: card.url, target: '_blank', rel: 'noopener' }"
@@ -49,7 +47,8 @@ export default {
   color: white;
   display: flex;
   justify-content: center;
-  font-size: 4rem;
+  font-size: clamp(2rem, 5vw, 4rem); /* adaptatif */
+  margin-top: 2rem;
 }
 .cards-section {
   margin-top: 4vh;
@@ -58,25 +57,31 @@ export default {
   gap: 2rem;
   justify-items: center;
 }
+
+/* Cartes */
 .card {
   width: 100%;
   max-width: 25vw;
   height: 25vh;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
+  position: relative;
 }
+
 .card:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
+
 .title {
-  font-size: 40px;
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -85,5 +90,20 @@ export default {
   background: rgba(0,0,0,0.4);
   text-align: center;
 }
-</style>
 
+@media (max-width: 768px) {
+  .cards-section {
+    grid-template-columns: 1fr; /* une seule colonne */
+    gap: 1rem;
+  }
+
+  .card {
+    max-width: 90%;
+    height: 30vh;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+</style>

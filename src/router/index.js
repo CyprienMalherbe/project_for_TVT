@@ -9,6 +9,7 @@ import Events from '../views/Events.vue'
 import Licenses from '../views/Licenses.vue'
 import TrainingSchedule from '@/views/TrainingSchedule.vue'
 import Chart from '@/views/Chart.vue'
+import News from '@/views/News.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -19,6 +20,7 @@ const routes = [
   { path: '/licenses', name: 'Licenses', component: Licenses },
   { path: '/contact', name: 'Contact', component: Contact },
   { path: '/training', name: 'Training', component: TrainingSchedule },
+  { path: '/news', name: 'News', component: News },
 ]
 
 const router = createRouter({

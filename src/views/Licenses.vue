@@ -6,7 +6,7 @@ import veryYoungLicenceImg from '@/assets/very-young-licence.jpg'
 import youngLicenceImg from '@/assets/young-licence.jpg'
 
 export default {
-  name: 'Events',
+  name: 'Licences',
   data () {
     return {
       cards: [
@@ -32,8 +32,6 @@ export default {
         class="card"
         color="blue"
         variant="elevated"
-        width="25vw"
-        height="25vh"
         rounded="xl"
         :image="card.image"
       >
@@ -52,46 +50,59 @@ export default {
   margin-bottom: 10px;
   color: white;
   max-width: 40vw;
+  text-align: center;
 }
+
 .subtitle {
   font-size: 1.2rem;
   margin-bottom: 20px;
   color: white;
   max-width: 40vw;
+  text-align: center;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  width: 100%;
 }
+
 .cards-section {
   margin-top: 4vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   justify-items: center;
+  width: 100%;
 }
+
 .card {
   position: relative;
   width: 100%;
   max-width: 25vw;
+  min-width: 250px;
+  min-height: 150px;
   height: 25vh;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
+
 .card:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
+
 .card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
+
 .card-title {
-  font-size: 40px;
+  font-size: 1.2rem;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -99,8 +110,10 @@ export default {
   color: white;
   background: rgba(0,0,0,0.4);
   text-align: center;
+  padding: 5px 10px;
   z-index: 2;
 }
+
 .card-text {
   position: absolute;
   bottom: 50%;
@@ -115,7 +128,39 @@ export default {
   transition: opacity 0.3s ease;
   z-index: 3;
 }
+
 .card:hover .card-text {
   opacity: 1;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cards-section {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  .card {
+    max-width: 100%;
+    height: auto;
+    min-height: 180px;
+  }
+  .card-title {
+    font-size: 1rem;
+    padding: 4px 8px;
+  }
+  .card-text {
+    font-size: 18px;
+    padding: 0.4rem 0.8rem;
+  }
+  .title {
+    font-size: 1.5rem;
+    max-width: 90%;
+    margin-top: 5vh;
+  }
+  .subtitle {
+    font-size: 1rem;
+    max-width: 90%;
+  }
 }
 </style>

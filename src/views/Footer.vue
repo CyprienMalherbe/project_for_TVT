@@ -14,10 +14,10 @@ export default {
 <template>
   <v-footer color="black">
     <v-container>
-      <v-row align="end">
+      <v-row class="footer-row" align="center" justify="space-between">
 
-        <!-- Section 1: Bas gauche -->
-        <v-col class="text-left">
+        <!-- Section 1: Suivez-nous -->
+        <v-col class="footer-col text-left">
           <h4 class="white--text">Suivez-nous</h4>
           <v-btn
             icon
@@ -37,8 +37,8 @@ export default {
           </v-btn>
         </v-col>
 
-        <!-- Section 2: Milieu -->
-        <v-col class="text-center">
+        <!-- Section 2: Partenaire -->
+        <v-col class="footer-col text-center">
           <h4 class="white--text">Notre partenaire</h4>
           <a href="https://foulees.com/-louviers-" target="_blank">
             <v-img
@@ -52,11 +52,12 @@ export default {
         </v-col>
 
         <!-- Section 3: Droite -->
-        <v-col class="text-right">
+        <v-col class="footer-col text-right">
           <p class="developped-by">
             Ce site a été développé par Cyprien Malherbe, développeur web
           </p>
         </v-col>
+
       </v-row>
     </v-container>
   </v-footer>
@@ -72,9 +73,32 @@ export default {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 50%;
 }
+
 .hover-zoom:hover {
   transform: scale(1.2);
   box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.4);
   border-radius: 50%;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .footer-row {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-col {
+    text-align: center !important;
+    margin-bottom: 0.5rem;
+  }
+
+  .developped-by {
+    font-size: small;
+  }
+
+  .footer-col v-img {
+    max-width: 80px !important;
+  }
 }
 </style>

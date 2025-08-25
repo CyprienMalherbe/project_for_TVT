@@ -1,28 +1,31 @@
 <script>
 import youngAquathlonImg from '@/assets/young-aquathlon.jpg'
-import triathlonImg from '@/assets/triathlon.jpg'
-import aquathlonImg from '@/assets/aquathlon.jpg'
-import bikeAndRunImg from '@/assets/bike-and-run.jpg'
 
 export default {
-  name: 'Events',
+  name: 'News',
   data () {
     return {
       cards: [
-        { title: 'Aquathlon jeunes', image: youngAquathlonImg, url: 'https://www.klikego.com/inscription/aquathlon-jeunes-de-gaillon-2025/triathlon/1643334174070-6' },
-        { title: 'Triathlon des 2 amants', image: triathlonImg, url: 'https://www.klikego.com/inscription/triathlon-des-2-amants-2025/triathlon/1643334174070-5' },
-        { title: 'Aquathlon des 2 amants', image: aquathlonImg, url: 'https://www.klikego.com/inscription/aquathlon-des-2-amants-2025/triathlon/1643334174070-7?' },
-        { title: 'Bike and Run', image: bikeAndRunImg, url: 'https://www.lntri.fr/agenda/bike-and-run-des-mousseaux/' },
+        {
+          title: 'Résultats aquathlon jeunes',
+          image: youngAquathlonImg,
+          published: new Date("2025-06-02T03:24:00"),
+          url: 'https://www.lntri.fr/wp-content/uploads/2025/05/2025_Aquathlon-Gaillon.pdf'
+        },
       ],
     }
   },
+  methods: {
+    formatDate(date) {
+      return new Intl.DateTimeFormat('fr-FR', { day: '2-digit', month: 'short', year: 'numeric' }).format(date)
+    }
+  }
 }
 </script>
 
 <template>
   <div class="container">
-    <h1 class="title">Nos différents événements</h1>
-    <p class="subtitle">Vous trouverez ci-après nos différents événements de l'année</p>
+    <h1 class="title">Actualités</h1>
     <div class="cards-section">
       <v-card
         v-for="card in cards"
@@ -36,6 +39,11 @@ export default {
         target="_blank"
         rel="noopener"
       >
+        <!-- Overlay date -->
+        <div class="card-date">
+          {{ formatDate(card.published) }}
+        </div>
+        <!-- Title overlay -->
         <v-card-title class="card-title">{{ card.title }}</v-card-title>
       </v-card>
     </div>
@@ -48,13 +56,6 @@ export default {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: white;
-  max-width: 40vw;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
   color: white;
   max-width: 40vw;
 }
@@ -78,7 +79,7 @@ export default {
 
 .card {
   width: 100%;
-  max-width: 25vw;
+  max-width: 25vw; /* desktop */
   min-width: 250px;
   min-height: 150px;
   height: 25vh;
@@ -92,13 +93,6 @@ export default {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.card img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
 .card-title {
   font-size: 1.2rem;
   position: absolute;
@@ -106,12 +100,24 @@ export default {
   left: 0;
   right: 0;
   color: white;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.5);
   text-align: center;
   padding: 5px 10px;
 }
 
-/* Mobile */
+.card-date {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+
+/* Responsive mobile */
 @media (max-width: 768px) {
   .cards-section {
     grid-template-columns: 1fr;
@@ -127,14 +133,14 @@ export default {
     font-size: 1rem;
     padding: 4px 8px;
   }
+  .card-date {
+    font-size: 0.8rem;
+    padding: 2px 5px;
+  }
   .title {
     font-size: 1.5rem;
     max-width: 90%;
     margin-top: 5vh;
-  }
-  .subtitle {
-    font-size: 1rem;
-    max-width: 90%;
   }
 }
 </style>

@@ -21,14 +21,14 @@ export default {
       et on organise un stage pour encore plus de fun.
       Alors, prêt à relever le défi ?
     </p>
-    <img class="image" src="@/assets/school.jpg">
+    <img class="image" src="@/assets/school.jpg" alt="École de triathlon">
     <p class="subtitle">
       Le triathlon, ça vous tente ? Venez découvrir
-        notre école de triathlon avec une séance
-        d'essai. C'est l'occasion de rencontrer nos
-        jeunes triathlète et nos entraîneurs pour se
-        familiariser avec le club et les entraînements. Notez bien la date : la reprise est fixée au
-        <span class="important-date">mercredi 24 septembre</span>.
+      notre école de triathlon avec une séance
+      d'essai. C'est l'occasion de rencontrer nos
+      jeunes triathlète et nos entraîneurs pour se
+      familiariser avec le club et les entraînements. Notez bien la date : la reprise est fixée au
+      <span class="important-date">mercredi 24 septembre</span>.
     </p>
     <p class="subtitle">
       N'hésitez pas à aller faire un tour dans nos différentes rubriques, et notamment
@@ -41,12 +41,12 @@ export default {
 .link {
   font-weight: bold;
   text-decoration: underline;
-  color: #4fc3f7; /* bleu clair par exemple */
+  color: #4fc3f7;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 .link:hover {
-  color: #82e9de; /* change de couleur au survol */
+  color: #82e9de;
 }
 .important-date {
   font-weight: bold;
@@ -57,6 +57,7 @@ export default {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 1rem;
 }
 .title {
   margin-top: 7vh;
@@ -79,5 +80,23 @@ export default {
   border-radius: 10px;
   margin-top: 1vh;
   margin-bottom: 8vh;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+    max-width: 90%;
+    margin-top: 5vh;
+  }
+  .subtitle {
+    font-size: 1rem;
+    max-width: 90%;
+    margin-bottom: 15px;
+  }
+  .image {
+    max-width: 95%;
+    margin-bottom: 5vh;
+  }
 }
 </style>

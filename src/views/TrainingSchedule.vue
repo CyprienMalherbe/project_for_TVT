@@ -68,16 +68,11 @@ export default {
   methods: {
     trainingIcon(discipline) {
       switch (discipline) {
-        case 'Course à pied':
-          return 'mdi-run'
-        case 'Natation':
-          return 'mdi-swim'
-        case 'Renforcement musculaire':
-          return 'mdi-dumbbell'
-        case 'Vélo':
-          return 'mdi-bike'
-        case 'Course à pied & Vélo':
-          return 'mdi-shoe-sneaker'
+        case 'Course à pied': return 'mdi-run'
+        case 'Natation': return 'mdi-swim'
+        case 'Renforcement musculaire': return 'mdi-dumbbell'
+        case 'Vélo': return 'mdi-bike'
+        case 'Course à pied & Vélo': return 'mdi-shoe-sneaker'
       }
     },
   },
@@ -89,7 +84,22 @@ export default {
     <h1 class="title">Nos créneaux</h1>
 
     <!-- Filtre par catégorie -->
-    <v-slide-group v-model="selectedCategory" class="pa-2 day-selector">
+    <v-slide-group
+      v-model="selectedCategory"
+      class="pa-2 day-selector"
+      show-arrows
+    >
+      <template #prev>
+        <v-btn icon class="white--text">
+          <v-icon>mdi-chevron-left</v-icon>
+        </v-btn>
+      </template>
+      <template #next>
+        <v-btn icon class="white--text">
+          <v-icon>mdi-chevron-right</v-icon>
+        </v-btn>
+      </template>
+
       <v-slide-group-item
         v-for="cat in categories"
         :key="cat"
@@ -109,7 +119,22 @@ export default {
     </v-slide-group>
 
     <!-- Sélecteur de jour -->
-    <v-slide-group v-model="selectedDay" class="pa-2 day-selector">
+    <v-slide-group
+      v-model="selectedDay"
+      class="pa-2 day-selector"
+      show-arrows
+    >
+      <template #prev>
+        <v-btn icon class="white--text">
+          <v-icon>mdi-chevron-left</v-icon>
+        </v-btn>
+      </template>
+      <template #next>
+        <v-btn icon class="white--text">
+          <v-icon>mdi-chevron-right</v-icon>
+        </v-btn>
+      </template>
+
       <v-slide-group-item
         v-for="day in days"
         :key="day.name"
@@ -155,73 +180,91 @@ export default {
 ::v-deep(.v-slide-group__content) {
   justify-content: center;
 }
+
 .schedule-container {
-  max-width: 70vw;
+  max-width: 95vw;
   margin: 0 auto;
   text-align: center;
 }
+
 .title {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: white;
-  max-width: 70vw;
+  max-width: 95vw;
   padding-top: 7vh;
 }
+
 .day-btn {
   font-weight: bold;
-  min-width: 90px;
+  min-width: 80px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .day-btn:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
+
 .training-card {
   background: transparent;
   color: #fff;
   border-radius: 24px;
-  padding: 2rem;
-  max-width: 60vw;
+  padding: 1rem;
+  max-width: 95vw;
 }
+
 .training-list {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
+
 .training-item {
   background: rgba(255, 255, 255, 0.15);
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1rem;
   border-radius: 16px;
-  font-size: 1.1rem;
+  font-size: 1rem;
   display: flex;
-  align-items: flex-start;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 0.5rem;
   transition: background 0.3s ease, transform 0.2s ease;
   text-align: left;
 }
 .training-item:hover {
   background: rgba(255, 255, 255, 0.25);
-  transform: translateX(5px);
-}
-.training-info-row {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-.training-info-row .left {
-  flex: 1;
-  text-align: left;
-}
-.training-info-row .center {
-  flex: 1;
-  text-align: center;
-}
-.training-info-row .right {
-  flex: 1;
-  text-align: right;
+  transform: translateX(0);
 }
 
+.training-info-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.training-info-row .left,
+.training-info-row .center,
+.training-info-row .right {
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+/* Desktop version */
+@media(min-width: 768px) {
+  .training-item {
+    flex-direction: row;
+    font-size: 1.1rem;
+  }
+  .training-info-row {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .training-info-row .left,
+  .training-info-row .center,
+  .training-info-row .right {
+    text-align: left;
+    flex: 1;
+  }
+}
 </style>
