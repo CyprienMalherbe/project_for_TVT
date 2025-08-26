@@ -1,15 +1,34 @@
 <script>
+import cynthiaSuardImg from '@/assets/cynthia-suard.png'
+import alexandreLebougautImg from '@/assets/alexandre-lebougaut.png'
+import alexisRousselinImg from '@/assets/alexis-rousselin.png'
+import vincentRatelImg from '@/assets/vincent-ratel.png'
+import vincentPetitImg from '@/assets/vincent-petit.png'
+import eliseRousselinImg from '@/assets/elise-rousselin.png'
+import margotRousselinImg from '@/assets/margot-rousselin.png'
+import margotDelaunayImg from '@/assets/margot-delaunay.png'
+import cyprienMalherbeImg from '@/assets/cyprien-malherbe.png'
+import sebastienAndreImg from '@/assets/sebastien-andre.png'
+import geraldVigerImg from '@/assets/gerald-viger.png'
+import mickaelSuardImg from '@/assets/mickael-suard.png'
+
 export default {
   name: 'Chart',
   data() {
     return {
       team: [
-        { name: 'Alice Dupont', role: 'Directrice', email: 'alice.dupont@example.com', image: 'https://i.pravatar.cc/150?img=1' },
-        { name: 'Bob Martin', role: 'Responsable communication', email: 'bob.martin@example.com', image: 'https://i.pravatar.cc/150?img=2' },
-        { name: 'Claire Leroy', role: 'Chargée de projet', email: 'claire.leroy@example.com', image: 'https://i.pravatar.cc/150?img=3' },
-        { name: 'David Petit', role: 'Trésorier', email: 'david.petit@example.com', image: 'https://i.pravatar.cc/150?img=4' },
-        { name: 'Emma Durand', role: 'Secrétaire', email: 'emma.durand@example.com', image: 'https://i.pravatar.cc/150?img=5' },
-        { name: 'François Martin', role: 'Chargé logistique', email: 'francois.martin@example.com', image: 'https://i.pravatar.cc/150?img=6' },
+        { name: 'Cynthia Suard', role: 'Présidente / Entraîneur jeunes / BF5', image: cynthiaSuardImg },
+        { name: 'Alexandre Lebougault', role: 'Vice président / Responsable partenaires', image: alexandreLebougautImg },
+        { name: 'Alexis Rousselin', role: 'Responsable planification des entraînements et organisations sportives / Entraîneur jeunes et adultes / BF3 / BNSSA', image: alexisRousselinImg },
+        { name: 'Vincent Ratel', role: 'Responsable événements club / Entraîneur renforcement musculaire', image: vincentRatelImg },
+        { name: 'Vincent Petit', role: 'Trésorier / Entraîneur jeunes et adultes / BF2', image: vincentPetitImg },
+        { name: 'Elise Rousselin', role: "Secrétaire de l'école de triathlon", image: eliseRousselinImg },
+        { name: 'Margot Rousselin', role: 'Responsable communication / Entraîneur jeunes / BF2', image: margotRousselinImg },
+        { name: 'Margot Delaunay', role: 'Secrétaire & responsable des inscriptions et de commande des tenues', image: margotDelaunayImg },
+        { name: 'Cyprien Malherbe', role: 'Responsable web', image: cyprienMalherbeImg },
+        { name: 'Sébastien André', role: 'BF5 BNSSA', image: sebastienAndreImg },
+        { name: 'Gérald Viger', role: 'BNSSA', image: geraldVigerImg },
+        { name: 'Mickael Suard', role: 'Responsable Grand Prix / BF5', image: mickaelSuardImg },
       ]
     }
   }
@@ -22,12 +41,11 @@ export default {
     <div class="cards-wrapper">
       <div v-for="(member, index) in team" :key="index" class="team-card">
         <div class="avatar">
-          <img :src="member.image" :alt="member.name" />
+          <img :src="member.image" :alt="member.name" :class="`avatar-${index}`"/>
         </div>
         <div class="info">
           <h3>{{ member.name }}</h3>
           <p class="role">{{ member.role }}</p>
-          <p class="email">{{ member.email }}</p>
         </div>
       </div>
     </div>
@@ -35,6 +53,10 @@ export default {
 </template>
 
 <style scoped>
+.avatar-0, .avatar-2, .avatar-3, .avatar-5, .avatar-6, .avatar-11 {
+  object-position: top;
+}
+
 .chart-container {
   max-width: 70vw;
   margin: 2rem auto;

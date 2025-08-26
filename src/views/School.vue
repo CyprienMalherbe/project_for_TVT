@@ -30,14 +30,36 @@ export default {
       familiariser avec le club et les entraînements. Notez bien la date : la reprise est fixée au
       <span class="important-date">mercredi 24 septembre</span>.
     </p>
+    <h1 class="eveil-title">Éveil dès 4 ans</h1>
+    <h1 class="eveil-subtitle">Nouveauté pour la saison 2025-2026</h1>
+    <img class="image" src="@/assets/eveil.png" alt="Éveil">
     <p class="subtitle">
-      N'hésitez pas à aller faire un tour dans nos différentes rubriques, et notamment
-      la rubrique <RouterLink to="/training" class="link">Créneaux</RouterLink> pour connaître les horaires d'entraînements
+      Une bonne façon de découvrir deux des trois sports de la discipline : cyclisme (draisienne ou tricycle, trottinette ou vélo à roulettes) et
+      course à pied dans un cadre sécurisé et avec des méthodes pédagogiques spécifiques (de l'école Française de Triathlon). Il n'y a pas
+      de natation pour les triathlèes "Éveils" mais il y aura bel et bien des jeux d'eau proposés.
+    </p>
+    <p class="subtitle">
+      N'hésitez pas à aller faire un tour dans nos différentes rubriques, et notamment la rubrique
+      <RouterLink to="/training" class="link">Créneaux</RouterLink> pour connaître les horaires d'entraînements.
     </p>
   </div>
 </template>
 
 <style scoped>
+.eveil-title {
+  margin-top: 7vh;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  max-width: 40vw;
+}
+.eveil-subtitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+  max-width: 40vw;
+}
 .link {
   font-weight: bold;
   text-decoration: underline;
@@ -90,6 +112,16 @@ export default {
     margin-top: 5vh;
   }
   .subtitle {
+    font-size: 1rem;
+    max-width: 90%;
+    margin-bottom: 15px;
+  }
+  .eveil-title {
+    font-size: 2rem;
+    max-width: 90%;
+    margin-top: 5vh;
+  }
+  .eveil-subtitle {
     font-size: 1rem;
     max-width: 90%;
     margin-bottom: 15px;
