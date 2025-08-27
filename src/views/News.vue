@@ -1,25 +1,19 @@
-<script>
-import youngAquathlonImg from '@/assets/young-aquathlon.jpg'
+<script setup>
+import { useNewsStore } from '@/stores/news'
+import { storeToRefs } from 'pinia'
+import { RouterLink } from 'vue-router'
 
-export default {
-  name: 'News',
-  data () {
-    return {
-      cards: [
-        {
-          title: 'Résultats aquathlon jeunes',
-          image: youngAquathlonImg,
-          published: new Date("2025-06-02T03:24:00"),
-          url: 'https://www.lntri.fr/wp-content/uploads/2025/05/2025_Aquathlon-Gaillon.pdf'
-        },
-      ],
-    }
-  },
-  methods: {
-    formatDate(date) {
-      return new Intl.DateTimeFormat('fr-FR', { day: '2-digit', month: 'short', year: 'numeric' }).format(date)
-    }
-  }
+const newsStore = useNewsStore()
+const { orderedCards } = storeToRefs(newsStore)
+
+function slugify(text) {
+  return text
+    .toString()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
 }
 </script>
 
@@ -28,27 +22,26 @@ export default {
     <h1 class="title">Actualités</h1>
     <div class="cards-section">
       <v-card
-        v-for="card in cards"
+        v-for="card in orderedCards"
         :key="card.title"
         class="card"
         color="blue"
         variant="elevated"
         rounded="xl"
         :image="card.image"
-        :href="card.url"
-        target="_blank"
-        rel="noopener"
+        v-bind="card.url
+          ? { href: card.url, target: '_blank', rel: 'noopener' }
+          : { is: RouterLink, to: { name: 'NewsDetail', params: { slug: slugify(card.title) } } }"
       >
-        <!-- Overlay date -->
         <div class="card-date">
-          {{ formatDate(card.published) }}
+          {{ new Intl.DateTimeFormat('fr-FR', { day: '2-digit', month: 'short', year: 'numeric' }).format(card.published) }}
         </div>
-        <!-- Title overlay -->
         <v-card-title class="card-title">{{ card.title }}</v-card-title>
       </v-card>
     </div>
   </div>
 </template>
+
 
 <style scoped>
 .title {

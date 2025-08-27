@@ -10,6 +10,7 @@ import Licenses from '../views/Licenses.vue'
 import TrainingSchedule from '@/views/TrainingSchedule.vue'
 import Chart from '@/views/Chart.vue'
 import News from '@/views/News.vue'
+import NewsDetail from '@/views/NewsDetail.vue'
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
@@ -21,6 +22,7 @@ const routes = [
   { path: '/contact', name: 'Contact', component: Contact },
   { path: '/training', name: 'Training', component: TrainingSchedule },
   { path: '/news', name: 'News', component: News },
+  { path: '/news/:slug', name: 'NewsDetail', component: NewsDetail, props: true },
 ]
 
 const router = createRouter({

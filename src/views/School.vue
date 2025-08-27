@@ -36,7 +36,7 @@ export default {
     <p class="subtitle">
       Une bonne façon de découvrir deux des trois sports de la discipline : cyclisme (draisienne ou tricycle, trottinette ou vélo à roulettes) et
       course à pied dans un cadre sécurisé et avec des méthodes pédagogiques spécifiques (de l'école Française de Triathlon). Il n'y a pas
-      de natation pour les triathlèes "Éveils" mais il y aura bel et bien des jeux d'eau proposés.
+      de natation pour les triathlètes "Éveils" mais il y aura bel et bien des jeux d'eau proposés.
     </p>
     <p class="subtitle">
       N'hésitez pas à aller faire un tour dans nos différentes rubriques, et notamment la rubrique
