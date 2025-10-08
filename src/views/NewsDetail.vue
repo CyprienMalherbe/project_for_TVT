@@ -1,23 +1,39 @@
 <script setup>
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useNewsStore } from '@/stores/news'
 
 const route = useRoute()
 const newsStore = useNewsStore()
-
 const card = newsStore.getBySlug(route.params.slug)
+
+const subtitles = computed(() => {
+  if (!card) return []
+  return Object.keys(card)
+    .filter(k => /^subtitle\d+$/.test(k) && k !== 'subtitle1') // garde subtitle2,3,...
+    .sort((a, b) => Number(a.slice(8)) - Number(b.slice(8)))   // tri dans l’ordre
+    .map(k => card[k])
+    .filter(Boolean) // enlève les vides
+})
 </script>
 
 <template>
   <div v-if="card">
     <div class="container">
       <h1 class="title">{{ card.title }}</h1>
-      <p class="subtitle"> {{  card.subtitle1 }}</p>
+      <p class="subtitle">{{ card.subtitle1 }}</p>
       <img class="image" :src="card.image" alt="" />
-      <p class="subtitle"> {{  card.subtitle2 }}</p>
+      <p
+        v-for="(subtitle, index) in subtitles"
+        :key="index"
+        class="subtitle"
+        v-html="subtitle"
+      ></p>
     </div>
   </div>
 </template>
+
+
 
 <style scoped>
 .container {
@@ -40,6 +56,13 @@ const card = newsStore.getBySlug(route.params.slug)
 .subtitle {
   font-size: 1.2rem;
   margin-bottom: 20px;
+  color: white;
+  max-width: 40vw;
+}
+
+.subsubtitle {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
   color: white;
   max-width: 40vw;
 }
