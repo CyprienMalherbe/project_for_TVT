@@ -26,7 +26,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHashHistory('/project_for_TVT/'),
+  history: createWebHashHistory('/'),
   routes,
   scrollBehavior(to, from, savedPosition) {
     // si navigation avec "back" ou "forward"
