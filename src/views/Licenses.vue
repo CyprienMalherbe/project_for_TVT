@@ -24,7 +24,11 @@ export default {
 <template>
   <div class="container">
     <h1 class="title">Nos licences</h1>
-    <p class="subtitle">Prêt à blabla et Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, porro assumenda labore maiores debitis dolor voluptatem sunt, at consequatur neque officiis ad quas saepe. Mollitia perspiciatis voluptate debitis rerum laborum!</p>
+    <p class="subtitle">L'adhésion au Team Val'Eure Triathlon vous permet d'accéder au plan d'entraînement ainsi que jusqu'à 8 créneaux d'entraînements collectifs hebdomadaires encadrés dans les trois disciplines (natation, course à pied et vélo + un créneau de renfo / PPG), de quoi réaliser vos objectifs, qu'il s'agisse de réaliser un premier enchaînement complet, d'avoir une pratique orientée vers le plaisir et le défi personnel ou bien de performer sur courte distance, distance olympique ou encore vous lancer sur de la longue distance.</p>
+    <p class="subtitle">Pour les enfants de l'école de Triathlon à qui sont proposés 4 créneaux par semaine, l'adhésion comprend également le prêt de la trifonction ainsi que les inscriptions aux épreuves FFTri.</p>
+    <p class="subtitle">Si vous êtes éligible, le pass sport peut être utilisé pour le paiement de la licence, ainsi que la carte atout Normandie pour les moins de 25 ans.</p>
+    <p class="subtitle">Pour le public adultes, deux types de licences sont proposés: loisir et compétition. Aucune différence au quotidien dans le club, mais un.e licencié.e adulte "loisir" devra souscrire à un pass compétition délivré par la ligue pour s'aligner sur une course fédérale.</p>
+    <p class="subtitle">À très vite en séance !</p>
     <div class="cards-section">
       <v-card
         v-for="card in cards"
