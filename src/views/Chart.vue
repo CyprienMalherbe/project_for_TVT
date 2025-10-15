@@ -17,29 +17,70 @@ export default {
   data() {
     return {
       team: [
-        { name: 'Cynthia Suard', role: 'Présidente / Entraîneur jeunes / BF5', image: cynthiaSuardImg },
-        { name: 'Alexandre Lebougault', role: 'Vice président / Responsable partenaires', image: alexandreLebougautImg },
-        { name: 'Alexis Rousselin', role: 'Responsable planification des entraînements et organisations sportives / Entraîneur jeunes et adultes / BF3 / BNSSA', image: alexisRousselinImg },
-        { name: 'Vincent Ratel', role: 'Responsable événements club / Entraîneur renforcement musculaire', image: vincentRatelImg },
-        { name: 'Vincent Petit', role: 'Trésorier / Entraîneur jeunes et adultes / BF2', image: vincentPetitImg },
-        { name: 'Elise Rousselin', role: "Secrétaire de l'école de triathlon", image: eliseRousselinImg },
-        { name: 'Margot Rousselin', role: 'Responsable communication / Entraîneur jeunes / BF2', image: margotRousselinImg },
-        { name: 'Margot Delaunay', role: 'Secrétaire & responsable des inscriptions et de commande des tenues', image: margotDelaunayImg },
-        { name: 'Cyprien Malherbe', role: 'Responsable web', image: cyprienMalherbeImg },
-        { name: 'Sébastien André', role: 'BF5 BNSSA', image: sebastienAndreImg },
-        { name: 'Gérald Viger', role: 'BNSSA', image: geraldVigerImg },
-        { name: 'Mickael Suard', role: 'Responsable Grand Prix / BF5', image: mickaelSuardImg },
+        { name: 'Cynthia Suard', role: 'Présidente / Entraîneur jeunes / BF5', organization: 'Bureau', image: cynthiaSuardImg },
+        { name: 'Alexandre Lebougault', role: 'Vice président / Responsable partenaires', organization: 'CODIR', image: alexandreLebougautImg },
+        { name: 'Alexis Rousselin', role: 'Responsable planification des entraînements et organisations sportives / Entraîneur jeunes et adultes / BF3 / BNSSA', organization: 'CODIR', image: alexisRousselinImg },
+        { name: 'Vincent Ratel', role: 'Responsable événements club / Entraîneur renforcement musculaire', organization: 'CODIR', image: vincentRatelImg },
+        { name: 'Vincent Petit', role: 'Trésorier / Entraîneur jeunes et adultes / BF2', organization: 'Bureau', image: vincentPetitImg },
+        { name: 'Elise Rousselin', role: "Secrétaire de l'école de triathlon / Responsable groupe éveils", organization: 'CODIR', image: eliseRousselinImg },
+        { name: 'Margot Rousselin', role: 'Responsable communication / Entraîneur jeunes / BF2', organization: 'CODIR', image: margotRousselinImg },
+        { name: 'Margot Delaunay', role: 'Secrétaire & responsable des inscriptions et de commande des tenues', organization: 'Bureau', image: margotDelaunayImg },
+        { name: 'Cyprien Malherbe', role: 'Responsable web', organization: 'Support', image: cyprienMalherbeImg },
+        { name: 'Sébastien André', role: 'BF5 BNSSA', organization: 'Support', image: sebastienAndreImg },
+        { name: 'Gérald Viger', role: 'BNSSA', organization: 'Support', image: geraldVigerImg },
+        { name: 'Mickael Suard', role: 'Responsable Grand Prix / BF5', organization: 'CODIR', image: mickaelSuardImg },
       ]
     }
-  }
+  },
+  computed: {
+    bureauOrganization() {
+      return this.team.filter(m => m.organization === 'Bureau')
+    },
+    CODIROrganization() {
+      return this.team.filter(m => m.organization === 'CODIR')
+    },
+    supportOrganization() {
+      return this.team.filter(m => m.organization === 'Support')
+    }
+  },
 }
 </script>
 
 <template>
   <div class="chart-container">
-    <h2 class="chart-title">Notre Bureau</h2>
+    <h2 class="chart-title">Le Bureau</h2>
     <div class="cards-wrapper">
-      <div v-for="(member, index) in team" :key="index" class="team-card">
+      <div v-for="(member, index) in bureauOrganization"
+      :key="index"
+      class="team-card">
+        <div class="avatar">
+          <img :src="member.image" :alt="member.name" :class="`avatar-${index}`"/>
+        </div>
+        <div class="info">
+          <h3>{{ member.name }}</h3>
+          <p class="role">{{ member.role }}</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="chart-title">Le CODIR</h2>
+    <div class="cards-wrapper">
+      <div v-for="(member, index) in CODIROrganization"
+      :key="index"
+      class="team-card">
+        <div class="avatar">
+          <img :src="member.image" :alt="member.name" :class="`avatar-${index}`"/>
+        </div>
+        <div class="info">
+          <h3>{{ member.name }}</h3>
+          <p class="role">{{ member.role }}</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="chart-title">Fonctions supports</h2>
+    <div class="cards-wrapper">
+      <div v-for="(member, index) in supportOrganization"
+      :key="index"
+      class="team-card">
         <div class="avatar">
           <img :src="member.image" :alt="member.name" :class="`avatar-${index}`"/>
         </div>

@@ -13,8 +13,8 @@ export default {
         { title: 'Compétition', text: '205€', image: competitionLicenceImg },
         { title: 'Loisir', text: '160€', image: spareTimeLicenceImg },
         { title: 'Éveil', text: '35€', image: awakeningLicenceImg },
-        { title: 'Mini-poussin - poussin - pupille - benjamin', text: '120€', image: veryYoungLicenceImg },
-        { title: 'Minime - cadet - junior', text: '160€', image: youngLicenceImg },
+        { title: 'Mini-poussin - Poussin - Pupille - Benjamin', text: '120€', image: veryYoungLicenceImg },
+        { title: 'Minime - Cadet - Junior', text: '160€', image: youngLicenceImg },
       ],
     }
   },
@@ -43,6 +43,12 @@ export default {
         <div class="card-text">{{ card.text }}</div>
       </v-card>
     </div>
+    <h1 class="title">Guide du parfait triathlète</h1>
+    <p class="subtitle">Étape 1 : Rends-toi sur <a href="https://espacetri.fftri.com/" target="_blank" rel="noopener noreferrer"> Espace Tri </a> et fais ta demande de licence. C'est un peu comme un jeu vidéo, mais en vrai.</p>
+    <p class="subtitle">Étape 2 : Une fois ta licence en poche, il faut remplir le formulaire qui te correspond (on n'a pas voulu te surcharger, on a pensé à tout). C'est là que tu nous diras tout, ou presque !</p>
+    <p class="subtitle"> <a href="https://6wikj7cq.forms.app/formulaire-dinscription-ecole-de-triathlon-du-team-valeure-triathlon" target="_blank" rel="noopener noreferrer"> Formulaire Jeunes </a></p>
+    <p class="subtitle"> <a href="https://6wikj7cq.forms.app/formulaire-dinscription-au-team-valeure-traithlon" target="_blank" rel="noopener noreferrer"> Formulaire Adultes </a></p>
+    <p class="subtitle">Étape 3 : Si tu as suivi les deux premières étapes à la lettre (et on n'en doute pas), tu recevras un email de notre secrétaire. C'est le Saint Graal ! Il te confirmera que ton dossier est complet et te donnera le guide de bienvenue. Tu seras officiellement l'un des nôtres !</p>
   </div>
 </template>
 

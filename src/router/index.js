@@ -8,6 +8,8 @@ import Adults from '../views/Adults.vue'
 import Events from '../views/Events.vue'
 import Licenses from '../views/Licenses.vue'
 import TrainingSchedule from '@/views/TrainingSchedule.vue'
+import Results from '@/views/Results.vue'
+import ResultsDetail from '@/views/ResultsDetail.vue'
 import Chart from '@/views/Chart.vue'
 import News from '@/views/News.vue'
 import NewsDetail from '@/views/NewsDetail.vue'
@@ -15,6 +17,8 @@ import NewsDetail from '@/views/NewsDetail.vue'
 const routes = [
   { path: '/', name: 'Home', component: Home },
   { path: '/school', name: 'School', component: School },
+  { path: '/results', name: 'Results', component: Results },
+  { path: '/results/:slug', name: 'ResultsDetail', component: ResultsDetail, props: true },
   { path: '/chart', name: 'Chart', component: Chart },
   { path: '/adults', name: 'Adults', component: Adults },
   { path: '/events', name: 'Events', component: Events },

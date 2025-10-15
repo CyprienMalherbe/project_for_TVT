@@ -3,7 +3,7 @@ export default {
   name: 'TrainingSchedule',
   data() {
     return {
-      categories: ['Tous', 'Adultes', 'Mini-poussins-Juniors', 'Éveils'],
+      categories: ['Tous', 'Adultes', 'Mini-poussins-Poussins-Pupilles', 'Benjamins-Minimes', 'Cadets-Juniors', 'Éveils'],
       selectedDay: 'Lundi',
       selectedCategory: 'Tous',
       days: [
@@ -17,6 +17,7 @@ export default {
           name: 'Mardi',
           trainings: [
             { category: 'Adultes', discipline: 'Course à pied', time: '18h45-20h00', location: 'Stade Jean Rives' },
+            { category: 'Cadets-Juniors', discipline: 'Course à pied', time: '18h45-20h00', location: 'Stade Jean Rives' },
             { category: 'Adultes', discipline: 'Natation', time: '20h00-21h00', location: 'Aquaval' }
           ]
         },
@@ -24,8 +25,11 @@ export default {
           name: 'Mercredi',
           trainings: [
             { category: 'Éveils', discipline: 'Course à pied & Vélo', time: '16h30-17h15', location: 'Stade Jean Rives' },
-            { category: 'Mini-poussins-Juniors', discipline: 'Course à pied', time: '17h00-18h30', location: 'Stade Jean Rives' },
-            { category: 'Mini-poussins-Juniors', discipline: 'Natation', time: '18h45-19h45', location: 'Aquaval' },
+            { category: 'Benjamins-Minimes', discipline: 'Course à pied', time: '17h00-18h30', location: 'Stade Jean Rives' },
+            { category: 'Mini-poussins-Pupilles', discipline: 'Course à pied', time: '17h15-18h15', location: 'Stade Jean Rives' },
+            { category: 'Mini-poussins-Poussins-Pupilles', discipline: 'Natation', time: '18h45-19h45', location: 'Aquaval' },
+            { category: 'Benjamins-Minimes', discipline: 'Natation', time: '18h45-19h45', location: 'Aquaval' },
+            { category: 'Cadets-Juniors', discipline: 'Natation', time: '18h45-19h45', location: 'Aquaval' },
             { category: 'Adultes', discipline: 'Natation', time: '19h45-20h45', location: 'Aquaval' }
           ]
         },
@@ -38,6 +42,7 @@ export default {
         {
           name: 'Vendredi',
           trainings: [
+            { category: 'Adultes', discipline: 'Course à pied', time: '18h00-18h30', location: 'Stade Jean Rives' },
             { category: 'Adultes', discipline: 'Renforcement musculaire', time: '18h30-19h30', location: 'Stade Jean Rives' }
           ]
         },
@@ -45,8 +50,11 @@ export default {
           name: 'Samedi',
           trainings: [
             { category: 'Adultes', discipline: 'Natation', time: '9h30-11h30', location: 'Aquaval' },
-            { category: 'Mini-poussins-Juniors', discipline: 'Natation', time: '11h30-12h30', location: 'Aquaval' },
-            { category: 'Mini-poussins-Juniors', discipline: 'Vélo', time: '14h30-16h30', location: "Parking d'Aquaval" }
+            { category: 'Cadets-Juniors', discipline: 'Natation', time: '9h30-11h30', location: 'Aquaval' },
+            { category: 'Mini-poussins-Poussins-Pupilles', discipline: 'Natation', time: '11h30-12h30', location: 'Aquaval' },
+            { category: 'Benjamins-Minimes', discipline: 'Natation', time: '11h30-12h30', location: 'Aquaval' },
+            { category: 'Mini-poussins-Poussins-Pupilles', discipline: 'Vélo', time: '14h30-16h30', location: "Parking d'Aquaval" },
+            { category: 'Benjamins-Minimes', discipline: 'Vélo', time: '14h30-16h30', location: "Parking d'Aquaval" }
           ]
         },
         {
