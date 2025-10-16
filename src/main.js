@@ -8,7 +8,6 @@ import * as directives from 'vuetify/directives'
 
 import App from './App.vue'
 import router from './router'
-import { initGA } from './ga'   // <-- nouveau
 
 const vuetify = createVuetify({
   components,
@@ -19,8 +18,5 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 app.use(vuetify)
-
-// initialiser GA
-initGA(router)
 
 app.mount('#app')
