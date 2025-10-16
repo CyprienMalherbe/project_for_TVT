@@ -1,7 +1,5 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
-
-// Vuetify
 import 'vuetify/styles'
 import '@mdi/font/css/materialdesignicons.css'
 import { createVuetify } from 'vuetify'
@@ -10,6 +8,7 @@ import * as directives from 'vuetify/directives'
 
 import App from './App.vue'
 import router from './router'
+import { initGA } from './ga'   // <-- nouveau
 
 const vuetify = createVuetify({
   components,
@@ -17,15 +16,11 @@ const vuetify = createVuetify({
 })
 
 const app = createApp(App)
-
-// 1️⃣ d’abord installer Pinia
-const pinia = createPinia()
-app.use(pinia)
-
-// 2️⃣ ensuite installer le router
+app.use(createPinia())
 app.use(router)
-
 app.use(vuetify)
 
-// 3️⃣ enfin monter l’app
+// initialiser GA
+initGA(router)
+
 app.mount('#app')
