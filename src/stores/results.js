@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import youngAquathlonImg from '@/assets/young-aquathlon.jpg'
+import Bayman2025 from '@/assets/results-bayman-2025.jpg'
 import BnRCriel2025 from '@/assets/BnR-Criel-2025.jpg'
 import resultsTriathlon2025 from '@/assets/results-triathlon-2025.jpg'
 
@@ -42,6 +42,12 @@ export const useResultsStore = defineStore('results', {
         published: new Date("2025-10-15T03:24:00"),
         subtitle1: "Cyprien Malherbe et Vincent Ratel ont représenté le club sur la première étape du challenge 2025 ce dimanche à Criel s mer, dans le nord de la Seine-Maritime et ont parcouru les plus de 20km du parcours en vallée d’Yères en 01:06’39, soit à une allure de 3’19/km.",
         subtitle2: "Ils prennent la 8eme place au scratch et collectent de précieux points en vue du général. Prochaine étape à Bernay avec une montée en puissance du binôme qui sera sans nul doute rejoint par d’autres TVTistes lors de cette échéances, sans oublier #6 qui aura lieu « à la maison » le 30 novembre !",
+      },
+      {
+        title: 'Triathlon Bayman 2025',
+        image: Bayman2025,
+        published: new Date("2025-10-20T03:24:00"),
+        subtitle1: "Fan de l'épreuve autant que du Mont, Didier Soutif était à nouveau sur le Bayman cette année et termine cette fois le L en 06:01'36 avec en guise de cerise sur le gâteau la joie de retrouver dans l'aire d'arrivée son ami de 30 ans Gervais Miquelard, pensionnaire lui du Triathlon Pays du Neubourg.\n «On n'a pas le même maillot, mais on a la même passion !»\n\n Bravo à tous les 2 !",
       },
     ],
   }),

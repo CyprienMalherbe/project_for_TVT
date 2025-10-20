@@ -58,6 +58,7 @@ const subtitles = computed(() => {
   margin-bottom: 20px;
   color: white;
   max-width: 40vw;
+  white-space: pre-wrap;
 }
 
 .subsubtitle {
