@@ -2,6 +2,7 @@ import { defineStore } from 'pinia'
 import Bayman2025 from '@/assets/results-bayman-2025.jpg'
 import BnRCriel2025 from '@/assets/BnR-Criel-2025.jpg'
 import resultsTriathlon2025 from '@/assets/results-triathlon-2025.jpg'
+import MarathonSeineEure2025 from '@/assets/marathon-seine-eure-2025.jpg'
 
 function slugify(text) {
   return text
@@ -48,6 +49,19 @@ export const useResultsStore = defineStore('results', {
         image: Bayman2025,
         published: new Date("2025-10-20T03:24:00"),
         subtitle1: "Fan de l'épreuve autant que du Mont, Didier Soutif était à nouveau sur le Bayman cette année et termine cette fois le L en 06:01'36 avec en guise de cerise sur le gâteau la joie de retrouver dans l'aire d'arrivée son ami de 30 ans Gervais Miquelard, pensionnaire lui du Triathlon Pays du Neubourg.\n «On n'a pas le même maillot, mais on a la même passion !»\n\n Bravo à tous les 2 !",
+      },
+      {
+        title: 'Incontournable marathon Seine-Eure',
+        image: MarathonSeineEure2025,
+        published: new Date("2025-10-23T03:24:00"),
+        subtitle1: "Une quinzaine de TVTistes étaient présents dimanche 19 octobre sur l’une des courses du Marathon Seine-Eure avec cette année un choix davantage porté vers le semi.",
+        subtitle2: "La plus grosse performance du week-end est sans aucun doute l’œuvre d'Arnaud Jacques qui entre dans le top 200 en claquant un énorme 03:13’ sur la distance mythique tandis qu’il a manqué un rien à Stéphane Delabrière pour passer sous les 03:35’.",
+        subtitle3: "Notons également l’excellente course de Vincent Boinet sur le semi et une Lucie Hamard qui confirme que la barre des 01:50’ est accessible.",
+        subtitle4: "Enfin, notre équipe EKIDEN termine les 42,195km sous les 03:20’, lancée par Adénora Petit qui réalise son meilleur temps sur 5km en 23’.",
+        subtitle5: "Beaucoup de sourires et de satisfactions sur l’espalnade de la mairie de Val de Reuil malgré les traits tirés ! Bonne récup’ à tous, notamment et particulièrement  à Johann Hamard, contraint à l’abandon au 35e kilomètre à cause d’ une vilaine douleur au genou qui ne cessait de s’intensifier depuis la mi-course. Allez, ça va passer (la douleur, bien sûr, mais aussi les 42km !).",
+        subtitle6: "Marathon\n 171 Arnaud Jacques 03:13’53\n352 Stéphane Delabrière 03:35’20\nDNF Johann Hamard –",
+        subtitle7: "Semi-marathon\n260 Vincent Boinet 01:36’34\n352 Vincent Ratel 01:41’30\n353 Alex Rousselin 01:41’30\n391 Sébastien Benoit 01:42’52\n392 Luc Fosseart 01:42’54\n592 Gérald Viger 01:51’26\n593 Lucie Hamard 01:51’26\n907 Daniel Corbel 02:02’12",
+        subtitle8: "Ekiden\n70 Team Val’Eure Triathon (Adénora Petit, Victor Boulnois, Aline Beau, Guy Boulnois Titouan Guibet, Vincent Petit) 03:19’44",
       },
     ],
   }),
