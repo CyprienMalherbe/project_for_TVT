@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import Bayman2025 from '@/assets/results-bayman-2025.jpg'
 import BnRCriel2025 from '@/assets/BnR-Criel-2025.jpg'
+import BnRBernay2025 from '@/assets/BnR-Bernay-2025.jpg'
 import resultsTriathlon2025 from '@/assets/results-triathlon-2025.jpg'
 import MarathonSeineEure2025 from '@/assets/marathon-seine-eure-2025.jpg'
 
@@ -62,6 +63,14 @@ export const useResultsStore = defineStore('results', {
         subtitle6: "Marathon\n 171 Arnaud Jacques 03:13’53\n352 Stéphane Delabrière 03:35’20\nDNF Johann Hamard –",
         subtitle7: "Semi-marathon\n260 Vincent Boinet 01:36’34\n352 Vincent Ratel 01:41’30\n353 Alex Rousselin 01:41’30\n391 Sébastien Benoit 01:42’52\n392 Luc Fosseart 01:42’54\n592 Gérald Viger 01:51’26\n593 Lucie Hamard 01:51’26\n907 Daniel Corbel 02:02’12",
         subtitle8: "Ekiden\n70 Team Val’Eure Triathon (Adénora Petit, Victor Boulnois, Aline Beau, Guy Boulnois Titouan Guibet, Vincent Petit) 03:19’44",
+      },
+      {
+        title: "B&R de l'hippodrome : La team RATEL dans le tiercé gagnant",
+        image: BnRBernay2025,
+        published: new Date("2025-10-31T03:24:00"),
+        subtitle1: "Votre directeur de course du Bike & Run des Mousseaux le 30 novembre a été bien inspiré de faire le déplacement avec sa compagne Perrine sur le Bike & Run de l'hippodrome à Bernay. Sur le S de 18km, le duo obtient de haute lutte la 3eme place en catégorie équipages mixtes après un mano à mano de 01:20' avec leurs concurrents directs.",
+        subtitle2: "Merci au SC Bernay, tant pour l'organisation au poil de crin que pour l'atmosphère conviviale!",
+        subtitle3: "Prochaine destination pour Vincent, cette fois avec son compère Cyprien Malherbe : Oudalle le 09 novembre. Go, guys!",
       },
     ],
   }),
