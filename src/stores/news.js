@@ -6,6 +6,7 @@ import articleTriAmants2025 from '@/assets/article-tri-amants-2025.jpg'
 import marbellaDuranteau2025 from '@/assets/marbella-duranteau-2025.jpg'
 import BandRinternational2025 from '@/assets/B&RMx2025-Bâche-annonce_V2.jpg'
 import BandR2025MousseauxResults from '@/assets/BandR-mousseaux-results-2025.jpg'
+import BandR2025Evreux from '@/assets/bnr-evreux-2025.jpeg'
 
 function slugify(text) {
   return text
@@ -83,13 +84,27 @@ export const useNewsStore = defineStore('news', {
         title: 'FRANC SUCCÈS POUR LA 1ÈRE ÉDITION DU BIKE AND RUN DES MOUSSEAUX !',
         image: BandR2025MousseauxResults,
         subtitle1: "Quelle première édition pour le Bike & Run des Mousseaux avec 149 équipages sur la ligne de départ ! De mémoire de Courcellois, on n'avait jamais vu autant de monde sur le parc des Pérelles. 5 courses, une météo parfaite, beaucoup d'animation sur les parcours et beaucoup de sourires sur les visages à l'arrivée !",
-        subtitle3: "Sur des formats et des parcours variés autour des étangs et à travers le village de Bouafles, tantôt roulants, tantôt exigeants, les athlètes des clubs seino-marins, calvadosiens ou voisins des Lions de Vernon, du Triathlon Pays du Neubourg se sont distingués sous le soleil de novembre, notamment Yannick Ampoulie et Cyril Bartholomé qui ont brillamment privé Nicolas Duranteau et Sylvain Gangloff d'une victoire à domicile sur le S.",
-        subtitle4: "Bravo à tous les TVTistes qui ont pris part à l'une ou l'autre des courses, pour les podiums à domicile de Harmonie Hamard & Sofia Garrido, Savanna Mirkovic & Paul Oray, Axel Suard & Paul Rocher, Ethan Dufossé & Adénora Petit, Pierre Laloire & Lenny Lecaplain et Nicolas Duranteau & Sylvain Gangloff. C'est également une réelle satisfaction pour le club d'avoir permis à cette occasion aux athlètes neo-licenciés ou nouvellement arrivés au club, des mini-poussins aux adultes, la prise de leur premier dossard sous nos couleurs ! 😃",
-        subtitle5: "🙏Merci pour votre venue sur ce nouvel événement qui sera qui sait amené à durer et bravo à l'ensemble des compétiteurs compétitrices, expérimentés ou moins, tout jeunes ou... moins jeunes...",
-        subtitle6: "🙏Merci également aux communes hôtes, Courcelles s/ Seine et Bouafles, à nos partenaires Les Foulées, le Coq toqué, Brasserie des 2 Amants, Tout 1 Fromage pour les camemberts 'limited edition', Carrefour Market Les Andelys... Ainsi évidemment qu'à l'ensemble des bénévoles, vous êtes au top ! 🥳👌",
-        subtitle7: "Les résultats <a href='https://smilevents27.wiclax-results.com/bike_and_run_des_mousseaux/' target='_blank' rel='noopener noreferrer'>ici</a>",
-        subtitle8: "À bientôt pour de nouvelles aventures avec le TVT et bonne récup' ! ",
+        subtitle2: "Sur des formats et des parcours variés autour des étangs et à travers le village de Bouafles, tantôt roulants, tantôt exigeants, les athlètes des clubs seino-marins, calvadosiens ou voisins des Lions de Vernon, du Triathlon Pays du Neubourg se sont distingués sous le soleil de novembre, notamment Yannick Ampoulie et Cyril Bartholomé qui ont brillamment privé Nicolas Duranteau et Sylvain Gangloff d'une victoire à domicile sur le S.",
+        subtitle3: "Bravo à tous les TVTistes qui ont pris part à l'une ou l'autre des courses, pour les podiums à domicile de Harmonie Hamard & Sofia Garrido, Savanna Mirkovic & Paul Oray, Axel Suard & Paul Rocher, Ethan Dufossé & Adénora Petit, Pierre Laloire & Lenny Lecaplain et Nicolas Duranteau & Sylvain Gangloff. C'est également une réelle satisfaction pour le club d'avoir permis à cette occasion aux athlètes neo-licenciés ou nouvellement arrivés au club, des mini-poussins aux adultes, la prise de leur premier dossard sous nos couleurs ! 😃",
+        subtitle4: "🙏Merci pour votre venue sur ce nouvel événement qui sera qui sait amené à durer et bravo à l'ensemble des compétiteurs compétitrices, expérimentés ou moins, tout jeunes ou... moins jeunes...",
+        subtitle5: "🙏Merci également aux communes hôtes, Courcelles s/ Seine et Bouafles, à nos partenaires Les Foulées, le Coq toqué, Brasserie des 2 Amants, Tout 1 Fromage pour les camemberts 'limited edition', Carrefour Market Les Andelys... Ainsi évidemment qu'à l'ensemble des bénévoles, vous êtes au top ! 🥳👌",
+        subtitle6: "Les résultats <a href='https://smilevents27.wiclax-results.com/bike_and_run_des_mousseaux/' target='_blank' rel='noopener noreferrer'>ici</a>",
+        subtitle7: "À bientôt pour de nouvelles aventures avec le TVT et bonne récup' ! ",
         published: new Date("2025-12-03T03:24:00"),
+        route: 'news'
+      },
+      {
+        title: 'CHALLENGE JEAN BOUDARD : DERNIERE DE LA SAISON DE BIKE & RUN POUR LE TVT',
+        image: BandR2025Evreux,
+        subtitle1: "C’est avec entrain que le TVT s’est à nouveau déplacé en forêt de Saint-Michel pour l’épreuve organisée par le club de Evreux AC Triathlon. Avec Plaisir et redoutant ce qui est probablement - sur le format découverte comme sur le format « Elite » - le parcours le plus exigeant du circuit régional.",
+        subtitle2: "Ainsi, ce sont au total une dizaine d’équipages noir & turquoise qui ont pris part aux différentes courses, sur la lancée du Bike & Run des Mousseaux. En mini-poussins, Sofia et Ethan plein d’enthousiasme s’en sont drôlement bien sortis, comme des grands sur le circuit forestier de presque 2km, montant sur le podium et se voyant récompensés comme 3e équipage de la catégorie « mixtes ». Plus expérimentés désormais, Simon Geoffriau-Rasmusson et Timothée Jacques prennent eux la 7e place de la « grande » course jeunes et se classent 2eme en benjamins. Ce fut aussi le premier Bike & Run officiel et premier podium pour Marianne Jacques, encore, associée à Marie-Agnès Lecuyer et une première sur le podium pour Aline… Jacques toujours, accompagnée de Clémence Mahieu.",
+        subtitle3: "8 : ça aura donc été la place attitrée pour le binôme Vincent Ratel et Cyprien Malherbe sur cette saison automnale de Bike & Run. Le sort s’en est en plus mêlé cette fois avec une crevaison au pied de la dernière ascension, leur ôtant toute chance de le conjurer en luttant pour une 7e place au scratch. Bravo toutefois pour la régularité et une place satisfaisante au challenge de la ligue de Normandie !",
+        subtitle4: "Les résultats du TVT sur cette étape ébroïcienne :",
+        subtitle5: "Mini-Poussins Mixtes : Sofia Garrido & Ethan Berthiaux (00 :15’04)",
+        subtitle6: "Benjamins (M) : 2e Simon Geoffriau-Rasmusson & Timothée Jacques (00 :15’08)",
+        subtitle7: "Format XS 'Découverte' : 10e Arnaud Jacques & Hervé Jacques (00 :39’27), Aline Jacques & Clémence Mahieu (00 :47’47), Marianne Jacques & Marie-Agnès Lecuyer (00 :51’52)",
+        subtitle8: "Format S Elite : 8e : Vincent Ratel & Cyprien Malherbe (01 :06’31), 26e Guile Home & Alexis Rousselin (01 :15’57), 27e Ilyes Demamen & Stéphane Delabrière (01 :19’01), 29e Yann Quillet & Mathieu Lothon (01 :19’52), 35e Delphine Migos & David Dugenetay (01 :27’33)",
+        published: new Date("2025-12-17T03:24:00"),
         route: 'news'
       },
     ],
