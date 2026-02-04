@@ -4,6 +4,7 @@ import BnRCriel2025 from '@/assets/BnR-Criel-2025.jpg'
 import BnRBernay2025 from '@/assets/BnR-Bernay-2025.jpg'
 import resultsTriathlon2025 from '@/assets/results-triathlon-2025.jpg'
 import MarathonSeineEure2025 from '@/assets/marathon-seine-eure-2025.jpg'
+import CrossDuathlon2026 from '@/assets/cross-duathlon-2026.jpeg'
 
 function slugify(text) {
   return text
@@ -69,8 +70,24 @@ export const useResultsStore = defineStore('results', {
         image: BnRBernay2025,
         published: new Date("2025-10-31T03:24:00"),
         subtitle1: "Votre directeur de course du Bike & Run des Mousseaux le 30 novembre a été bien inspiré de faire le déplacement avec sa compagne Perrine sur le Bike & Run de l'hippodrome à Bernay. Sur le S de 18km, le duo obtient de haute lutte la 3eme place en catégorie équipages mixtes après un mano à mano de 01:20' avec leurs concurrents directs.",
-        subtitle2: "Merci au SC Bernay, tant pour l'organisation au poil de crin que pour l'atmosphère conviviale!",
-        subtitle3: "Prochaine destination pour Vincent, cette fois avec son compère Cyprien Malherbe : Oudalle le 09 novembre. Go, guys!",
+        subtitle2: "Merci au SC Bernay, tant pour l'organisation au poil de crin que pour l'atmosphère conviviale !",
+        subtitle3: "Prochaine destination pour Vincent, cette fois avec son compère Cyprien Malherbe : Oudalle le 09 novembre. Go, guys !",
+      },
+      {
+        title: "DUATHLON CROSS DE SAINT-AUBIN D’ESCROSVILLE 2026 : UN CRU… HUMIDE.",
+        image: CrossDuathlon2026,
+        published: new Date("2026-02-04T03:24:00"),
+        subtitle1: "On en serait presque à ne pas regretter que l’annonce d’un temps sec en milieu de semaine ne se soit pas confirmée, tellement l’édition 2026 du Duathlon Cross organisé par les amis du Triathlon pays du Neubourg a été inoubliable car difficile et technique, que ce soit sur les parties pédestres ou à VTT. En plus, un soin thalasso pour chaque athlète compris dans l’inscription, il fallait y penser !",
+        subtitle2: "Le TVT s’était déplacé en délégation pour cet incontournable de l’hiver puisque ce sont 24 pensionnaires du club qui ont participé à l’une des courses, de la catégorie mini-poussin jusqu’au format S.",
+        subtitle3: "Les podiums ont été féminins cette semaine grâce à Clémence et Adénora sur le XS, respectivement première cadette et première junior. Très belle performance également pour Thomas Delcourt qui signe pour la 2eme année consécutive un Top 10 (7ème) !",
+        subtitle4: "Bravo à tous les enfants qui à cette occasion ont découvert une 2eme discipline enchaînée après la saison de Bike &amp; Run et qui s’en sont très bien sortis, notamment Ethan, Jasper et Harmonie.",
+        subtitle5: "Bravo également à la grande sœur de Luca Pezetta Alicia qui boucle le XS et à Pablo Garrido, grand frère de Sofia qui – auteur d’une remontée éclatante à vélo – a brillamment remporté avec une avance substantielle la course des benjamins.",
+        subtitle6: 'Résultats complets et photos <a href="https://www.triathlonpaysduneubourg.fr/2026/02/01/organisation-3e-duathlon-cross-de-saint-aubin-decrosville/" target="_blank" rel="noopener noreferrer">ici</a>.',
+        subtitle7: "Format S (3.3m/13km/1.6km) : Thomas Delcourt : 7 e (57’22), Alexis Rousselin : 23 e (01 :08’03), Yann Quillet : 33 e (01 :13’10), Daniel Corbel : 44 e (01 :19’40), Jean-Marie Rosse : 59 e (01 :28’54)",
+        subtitle8: "Format XS (1.9km/6.5km/1.2km) : Éthan Dufossé : 6 e (35’27), Johann Hamard : 7 e (35’44), Clémence Mahieu : 18 e (38’54) (1ère cadette), Pierre Laloire : 19 e (39’19), Gabrielle Hamard : 27 e (44’05), Adénora Petit : 28 e (44’11) (1ère junior), Emma Corbel : 30 e (49’43)",
+        subtitle9: "Format Benjamins (1km/5km/1km) : Levi Dufossé : 13 e (25’50), Simon Geoffriau-Rasmusson : 16 e (26’09), Timothée Jacques : 22 e (28’41)",
+        subtitle10: "Format Pupilles (480m/2.65km/440m) : Axel Suard : 7 e (11’35), Timéo Rosse : 32 e (14’07)",
+        subtitle11: "Format Mini- Poussins/ Poussins (300m/1km/300m) : Éthan Berthaux : 11 e (8’02), Jasper Frost : 12 e (8’11), Harmonie Hamard : 19 e (9’08), Madison Le Merrer: 21 e (9’19), Sofia Garrido : 23 e (9’27), Luca Pezetta : 26 e (9’46), Baptiste Suard : 28 e (10’30).",
       },
     ],
   }),
