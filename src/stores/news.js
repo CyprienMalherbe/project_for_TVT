@@ -7,6 +7,7 @@ import marbellaDuranteau2025 from '@/assets/marbella-duranteau-2025.jpg'
 import BandRinternational2025 from '@/assets/B&RMx2025-Bâche-annonce_V2.jpg'
 import BandR2025MousseauxResults from '@/assets/BandR-mousseaux-results-2025.jpg'
 import BandR2025Evreux from '@/assets/bnr-evreux-2025.jpeg'
+import tri2amants2026 from '@/assets/tri-2-amants-2026.jpeg'
 
 function slugify(text) {
   return text
@@ -105,6 +106,15 @@ export const useNewsStore = defineStore('news', {
         subtitle7: "Format XS 'Découverte' : 10e Arnaud Jacques & Hervé Jacques (00 :39’27), Aline Jacques & Clémence Mahieu (00 :47’47), Marianne Jacques & Marie-Agnès Lecuyer (00 :51’52)",
         subtitle8: "Format S Elite : 8e : Vincent Ratel & Cyprien Malherbe (01 :06’31), 26e Guile Home & Alexis Rousselin (01 :15’57), 27e Ilyes Demamen & Stéphane Delabrière (01 :19’01), 29e Yann Quillet & Mathieu Lothon (01 :19’52), 35e Delphine Migos & David Dugenetay (01 :27’33)",
         published: new Date("2025-12-17T03:24:00"),
+        route: 'news'
+      },
+      {
+        title: 'Les inscriptions pour le triathlon des 2 amants sont ouvertes',
+        image: tri2amants2026,
+        subtitle1: "On se replonge dans l'aventure en 2026",
+        subtitle2: "Pour vous inscrire, c'est <a href='https://www.klikego.com/inscription/triathlon-des-2-amants-2026/triathlon/1643334174070-8' target='_blank' rel='noopener noreferrer'>ici</a>.",
+        subtitle3: "Et pour accéder directement au site de l'événement, c'est <a href='https://triathlon2amants.com/' target='_blank' rel='noopener noreferrer'>ici</a>.",
+        published: new Date("2026-02-14T03:24:00"),
         route: 'news'
       },
     ],
