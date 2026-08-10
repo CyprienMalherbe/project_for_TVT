@@ -9,6 +9,17 @@ import BandR2025MousseauxResults from "@/assets/BandR-mousseaux-results-2025.jpg
 import BandR2025Evreux from "@/assets/bnr-evreux-2025.jpeg";
 import tri2amants2026 from "@/assets/tri-2-amants-2026.jpeg";
 import aquathlon2026 from "@/assets/Aqua2026-Affiche_Insta.jpg";
+import aquathlon2026aquaval from "@/assets/aquathlon2026aquaval.jpg";
+import adenorafrance2026 from "@/assets/adenora-france-2026.jpg";
+import stagejeunes20261 from "@/assets/stage-jeunes-2026-1.jpg";
+import stagejeunes20262 from "@/assets/stage-jeunes-2026-2.jpg";
+import stagejeunes20263 from "@/assets/stage-jeunes-2026-3.jpg";
+import stagejeunes20264 from "@/assets/stage-jeunes-2026-4.jpg";
+import stagejeunes20265 from "@/assets/stage-jeunes-2026-5.jpg";
+import stagejeunes20266 from "@/assets/stage-jeunes-2026-6.jpg";
+import swimrunquillet2026 from "@/assets/swimrun-quillet-2026.jpg";
+import orga20261 from "@/assets/orga-2026-1.jpg";
+import orga20262 from "@/assets/orga-2026-2.jpg";
 
 function slugify(text) {
   return text
@@ -161,6 +172,76 @@ export const useNewsStore = defineStore("news", {
         subtitle2:
           "Pour vous inscrire, c'est <a href='https://www.klikego.com/inscription/aquathlon-jeunes-de-gaillon-2026/triathlon/1643334174070-9?lang=fr' target='_blank' rel='noopener noreferrer'>ici</a>.",
         published: new Date("2026-04-01T03:24:00"),
+        route: "news",
+      },
+      {
+        title:
+          "AQUATHLON JEUNES DE GAILLON : UNE BELLE RENCONTRE SPORTIVE DANS LES JARDINS DE AQUAVAL !",
+        images: [aquathlon2026aquaval],
+        subtitle1:
+          "🤩Ce mercredi après-midi fut radieux, le soleil brillant sur Gaillon autant que 140 jeunes athlètes des catégories mini-poussins à minimes sur les parcours de l'aquathlon du TVT. Ils & Elles ont offert aux éducateurs, parents, spectateurs  un beau spectacle sportif dans une atmosphère détendue et plaisante.",
+        subtitle2:
+          "Merci aux entraineurs et aux clubs de #lionstriathlon , #triathlonpaysduneubourg , #rouentriathlon , #msatriathlon , #scbernaytriathlon , #andellenatation , #piranhastriathlon , #caentriathlon , #acbbtriathlon pour leur venue en nombre, aux organisateurs, bénévoles du TVT, merci également aux enseignants des collèges de secteur, aux partenaires, au centre aquatique Aquaval pour l'accueil ainsi qu'à la ville de Gaillon pour le support matériel. Et bien évidemment et avant tout un un big, big bravo à tous les enfants!",
+        published: new Date("2026-04-29T03:24:00"),
+        route: "news",
+      },
+      {
+        title: "Championnats France jeunes",
+        images: [adenorafrance2026],
+        subtitle1:
+          "🏊‍♂️🚴‍♀️🏃‍♀️Demain, Adénora Petit représentera le Team Val'Eure Triathlon sur les demi-finales du championnat de France jeunes de Triathlon à Pontivy (56). Après une expérience tronquée en 2025 (natation dans  le Blavet annulée), notre jeune pousse cadette espère bien réaliser la meilleure performance  possible sur un enchaînement complet cette fois...",
+        subtitle2:
+          "Le parcours vélo breton exigeant ne sera certes pas à son avantage, mais on peut lui faire confiance pour donner le meilleur, comme toujours!",
+        published: new Date("2026-05-23T03:24:00"),
+        route: "news",
+      },
+      {
+        title: "TROIS JOURS ENSEMBLE POUR LES ADOS AVANT LE BREAK ESTIVAL",
+        images: [
+          stagejeunes20261,
+          stagejeunes20262,
+          stagejeunes20263,
+          stagejeunes20264,
+          stagejeunes20265,
+          stagejeunes20266,
+        ],
+        subtitle1:
+          "Début juillet, neufs de nos athlètes des catégories benjamins et minimes ont participé à Poses à un stage pré-estival afin de se retrouver une dernière fois avant le départ en vacances de chacun. ",
+        subtitle2:
+          "Au programme, des standards habituels, avec deux sorties vélo et 90km au cumulé sur des parcours en vallée de Seine et vers Lyons la Forêt, de la course à pied au bord du lac des 2 Amants , mais aussi une découverte du Swimm&Run et des activités de glisse sur le téléski nautique et au parc Aquajump! 🏄",
+        subtitle3:
+          "Top météo, du partage et des moments de franches rigolade : une belle initiative avec le concours de nos jeunes coachs, Vincent Flament, nouvellement détenteur du niveau d'entraîneur BF2 et de la désormais expérimentée Margot Rousselin, lauréate récente du BF3.",
+        subtitle4:
+          "🐥🐵Les plus jeunes auront eux leur moment de retrouvailles à la fin Août et pour tout ce monde là, la reprise des entrainements aura lieu mi-septembre, après du Triathlon des 2 Amants.",
+        subtitle5:
+          "😎 Bel été à tous et bon vent à Clémence qui nous quitte en direction du Calvados pour ses études! C'était un plaisir de t'avoir avec nous tout au long de la saison! 🥲",
+        published: new Date("2026-07-12T03:24:00"),
+        route: "news",
+      },
+      {
+        title:
+          "ÖTILLÖ SWIMRUN EXPERIENCE : MANUE ET YANN EN LICE À GOTHENBURG!",
+        images: [swimrunquillet2026],
+        subtitle1:
+          "Après un périple d'une semaine pour gagner la Scandinavie, Manue et Yann Quillet ont mis ce matin le cap vers l'île de Styrsö où mer du nord et mer baltique se rejoignent.",
+        subtitle2:
+          "Les conditions semblent excellentes de clémence et tout semble réuni pour faire de ce Swimm & Run long de 8850m dont 1320m de natation une expérience inoubliable.  ",
+        subtitle3:
+          "Départ pour notre binôme à 10h30. Pour suivre les Noir & Turquoise et les encourager à distance, live <a href='https://otilloswimrun.com/live/' target='_blank' rel='noopener noreferrer'>ici</a>",
+        published: new Date("2026-07-25T03:24:00"),
+        route: "news",
+      },
+      {
+        title:
+          "TRIATHLON DES  AMANTS, BIKE & RUN DES MOUSSEAUX :  ENCORE 2 ORGAS TVT AU PROGRAMME EN 2026!",
+        images: [orga20261, orga20262],
+        subtitle1:
+          "🏊🚴‍♀️🏃‍ L'automne du TVT débutera avec l'organisation de la 6e édition du Triathlon des 2 Amants le 13 septembre : 5 courses au programme, dont le championnat de Normandie Longue Distance 2026, et un millier d'athlètes attendus à la base de loisirs de Léry-Poses en Normandie.",
+        subtitle2:
+          "🚴‍♀️🏃‍ À noter également sur les agendas, la 2e édition de notre Bile & Run, le  du Bike & Run des Mousseaux à Courcelles s/ Seine (à 10' de Gaillon). Plus d'infos à venir (parcours, horaires, inscriptions)... ⏳",
+        subtitle3:
+          "📢 Et d'ici là, bien sûr, reprise des entrainements collectifs de la section adultes le 21 septembre et de l'école de Triathlon le 23 septembre.",
+        published: new Date("2026-08-08T03:24:00"),
         route: "news",
       },
     ],
