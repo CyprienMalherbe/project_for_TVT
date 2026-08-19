@@ -3,34 +3,32 @@ export default {
   name: 'TrainingSchedule',
   data() {
     return {
-      categories: ['Tous', 'Adultes', 'Mini-poussins-Poussins-Pupilles', 'Benjamins-Minimes', 'Cadets-Juniors', 'Éveils'],
+      categories: ['Tous', 'Adultes', 'Mini-poussins à Benjamins', 'Ados compétition', 'Éveils'],
       selectedDay: 'Lundi',
       selectedCategory: 'Tous',
       days: [
         {
           name: 'Lundi',
           trainings: [
-            { category: 'Adultes', discipline: 'Natation', time: '20h00-21h00', location: 'Aquaval' }
+            { category: 'Adultes', discipline: 'Natation', time: '20h00-21h00', location: 'Aquaval' },
+            { category: 'Ados compétition', discipline: 'Natation', time: '20h00-21h00', location: 'Aquaval' }
           ]
         },
         {
           name: 'Mardi',
           trainings: [
-            { category: 'Adultes', discipline: 'Course à pied', time: '18h45-20h00', location: 'Stade Jean Rives' },
-            { category: 'Cadets-Juniors', discipline: 'Course à pied', time: '18h45-20h00', location: 'Stade Jean Rives' },
-            { category: 'Adultes', discipline: 'Natation', time: '20h00-21h00', location: 'Aquaval' }
+            { category: 'Adultes', discipline: 'Course à pied', time: '18h45-20h15', location: 'Stade Jean Rives' },
+            { category: 'Ados compétition', discipline: 'Course à pied', time: '18h45-20h15', location: 'Stade Jean Rives' },
           ]
         },
         {
           name: 'Mercredi',
           trainings: [
-            { category: 'Éveils', discipline: 'Course à pied & Vélo', time: '16h30-17h15', location: 'Stade Jean Rives' },
-            { category: 'Benjamins-Minimes', discipline: 'Course à pied', time: '17h00-18h30', location: 'Stade Jean Rives' },
-            { category: 'Mini-poussins-Pupilles', discipline: 'Course à pied', time: '17h15-18h15', location: 'Stade Jean Rives' },
-            { category: 'Mini-poussins-Poussins-Pupilles', discipline: 'Natation', time: '18h45-19h45', location: 'Aquaval' },
-            { category: 'Benjamins-Minimes', discipline: 'Natation', time: '18h45-19h45', location: 'Aquaval' },
-            { category: 'Cadets-Juniors', discipline: 'Natation', time: '18h45-19h45', location: 'Aquaval' },
-            { category: 'Adultes', discipline: 'Natation', time: '19h45-20h45', location: 'Aquaval' }
+            { category: 'Éveils', discipline: 'Course à pied & Vélo', time: '16h30-17h30', location: 'Stade Jean Rives' },
+            { category: 'Mini-poussins à Benjamins', discipline: 'Course à pied', time: '17h15-18h15', location: 'Stade Jean Rives' },
+            { category: 'Mini-poussins à Benjamins', discipline: 'Natation', time: '18h45-19h45', location: 'Aquaval' },
+            { category: 'Adultes', discipline: 'Natation', time: '18h30-20h30', location: 'Aquaval' },
+            { category: 'Ados compétition', discipline: 'Natation', time: '18h30-20h00', location: 'Aquaval' }
           ]
         },
         {
@@ -42,25 +40,29 @@ export default {
         {
           name: 'Vendredi',
           trainings: [
-            { category: 'Adultes', discipline: 'Course à pied', time: '18h00-18h30', location: 'Stade Jean Rives' },
-            { category: 'Adultes', discipline: 'Renforcement musculaire', time: '18h30-19h30', location: 'Stade Jean Rives' }
+            { category: 'Adultes', discipline: 'Course à pied', time: '18h00-18h30', location: 'Courcelles' },
+            { category: 'Ados compétition', discipline: 'Course à pied', time: '18h00-18h30', location: 'Courcelles' },
+            { category: 'Adultes', discipline: 'Renforcement musculaire', time: '18h30-19h30', location: 'Courcelles' },
+            { category: 'Ados compétition', discipline: 'Renforcement musculaire', time: '18h30-19h30', location: 'Courcelles' }
           ]
         },
         {
           name: 'Samedi',
           trainings: [
-            { category: 'Adultes', discipline: 'Natation', time: '9h30-11h30', location: 'Aquaval' },
-            { category: 'Cadets-Juniors', discipline: 'Natation', time: '9h30-11h30', location: 'Aquaval' },
-            { category: 'Mini-poussins-Poussins-Pupilles', discipline: 'Natation', time: '11h30-12h30', location: 'Aquaval' },
-            { category: 'Benjamins-Minimes', discipline: 'Natation', time: '11h30-12h30', location: 'Aquaval' },
-            { category: 'Mini-poussins-Poussins-Pupilles', discipline: 'Vélo', time: '14h30-16h30', location: "Parking d'Aquaval" },
-            { category: 'Benjamins-Minimes', discipline: 'Vélo', time: '14h30-16h30', location: "Parking d'Aquaval" }
+            { category: 'Adultes', discipline: 'Natation Débutants', time: '9h30-10h30', location: 'Aquaval' },
+            { category: 'Mini-poussins à Benjamins', discipline: "Natation", time: '9h30-10h30', location: "Aquaval" },
+            { category: 'Adultes', discipline: 'Natation', time: '10h30-12h30', location: 'Aquaval' },
+            { category: 'Ados compétition', discipline: 'Natation', time: '10h30-12h00', location: 'Aquaval' },
+            { category: 'Éveils', discipline: "Natation", time: '11h45-12h30', location: 'Aquaval' },
+            { category: 'Mini-poussins à Benjamins', discipline: "Vélo", time: '14h30-16h30', location: "Parking d'Aquaval" }
           ]
         },
         {
           name: 'Dimanche',
           trainings: [
-            { category: 'Adultes', discipline: 'Vélo', time: '9h00-12h00', location: "Parking d'Aquaval" }
+            { category: 'Adultes', discipline: 'Vélo', time: '9h00-12h00', location: "Parking d'Aquaval" },
+            { category: 'Ados compétition', discipline: 'Vélo', time: '9h00-12h00', location: "Parking d'Aquaval" },
+            { category: 'Adultes', discipline: 'Vélo loisirs', time: '10h30-12h00', location: "Parking d'Aquaval" }
           ]
         },
       ],
@@ -78,8 +80,10 @@ export default {
       switch (discipline) {
         case 'Course à pied': return 'mdi-run'
         case 'Natation': return 'mdi-swim'
+        case 'Natation Débutants': return 'mdi-swim'
         case 'Renforcement musculaire': return 'mdi-dumbbell'
         case 'Vélo': return 'mdi-bike'
+        case 'Vélo loisirs': return 'mdi-bike'
         case 'Course à pied & Vélo': return 'mdi-shoe-sneaker'
       }
     },
