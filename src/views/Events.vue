@@ -9,10 +9,10 @@ export default {
   data () {
     return {
       cards: [
-        { title: 'Aquathlon jeunes', image: youngAquathlonImg, url: 'https://www.klikego.com/inscription/aquathlon-jeunes-de-gaillon-2025/triathlon/1643334174070-6' },
-        { title: 'Triathlon des 2 amants', image: triathlonImg, url: 'https://www.klikego.com/inscription/triathlon-des-2-amants-2026/triathlon/1643334174070-8' },
-        { title: 'Aquathlon des 2 amants', image: aquathlonImg, url: 'https://www.klikego.com/inscription/aquathlon-des-2-amants-2025/triathlon/1643334174070-7?' },
-        { title: 'Bike and Run des Mousseaux', image: bikeAndRunImg, url: 'https://www.lntri.fr/agenda/bike-and-run-des-mousseaux/' },
+        { title: 'Aquathlon jeunes', image: youngAquathlonImg, url: 'https://www.klikego.com/inscription/aquathlon-jeunes-de-gaillon-2026/triathlon/1643334174070-9?lang=fr' },
+        { title: 'Triathlon des 2 amants', image: triathlonImg, url: 'https://www.klikego.com/inscription/triathlon-des-2-amants-2026/triathlon/1643334174070-8?lang=fr' },
+        // { title: 'Aquathlon des 2 amants', image: aquathlonImg, url: 'https://www.klikego.com/inscription/aquathlon-des-2-amants-2025/triathlon/1643334174070-7?' },
+        { title: 'Bike and Run des Mousseaux', image: bikeAndRunImg, url: 'https://www.strayde.com/bike-and-run-des-mousseaux' },
       ],
     }
   },
