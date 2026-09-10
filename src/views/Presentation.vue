@@ -1,11 +1,11 @@
 <script>
-import youngImg from '@/assets/young.jpg'
 import adultsImg from '@/assets/adults.jpg'
-import licencedImg from '@/assets/licenced.jpg'
+import chartImg from '@/assets/chart.jpg'
 import clothesImg from '@/assets/clothing.png'
 import eventImg from '@/assets/events.jpg'
+import licencedImg from '@/assets/licenced.jpg'
 import trainingImg from '@/assets/training.jpg'
-import chartImg from '@/assets/chart.jpg'
+import youngImg from '@/assets/young.jpg'
 
 export default {
   name: 'Presentation',
@@ -45,9 +45,8 @@ export default {
 <style scoped>
 .big-title {
   color: white;
-  display: flex;
-  justify-content: center;
-  font-size: clamp(2rem, 5vw, 4rem); /* adaptatif */
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 4rem);
   margin-top: 2rem;
 }
 .cards-section {
