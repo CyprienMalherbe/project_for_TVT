@@ -1,92 +1,95 @@
-import { defineStore } from "pinia";
-import Bayman2025 from "@/assets/results-bayman-2025.jpg";
-import BnRCriel2025 from "@/assets/BnR-Criel-2025.jpg";
-import BnRBernay2025 from "@/assets/BnR-Bernay-2025.jpg";
-import resultsTriathlon2025 from "@/assets/results-triathlon-2025.jpg";
-import MarathonSeineEure2025 from "@/assets/marathon-seine-eure-2025.jpg";
-import CrossDuathlon2026 from "@/assets/cross-duathlon-2026.jpeg";
-import DUCAEN20261 from "@/assets/DU-Caen-2026-1.jpg";
-import DUCAEN20262 from "@/assets/DU-Caen-2026-2.jpg";
-import DUCAEN20263 from "@/assets/DU-Caen-2026-3.jpg";
-import DUCAEN20264 from "@/assets/DU-Caen-2026-4.jpg";
-import DUCAEN20265 from "@/assets/DU-Caen-2026-5.jpg";
-import SEMILUDO from "@/assets/semi-ludo.jpg";
-import SEMILISON from "@/assets/semi-lison.jpg";
-import FIVEKM20261 from "@/assets/5km2026-1.jpg";
-import FIVEKM20262 from "@/assets/5km2026-2.jpg";
-import FIVEKM20263 from "@/assets/5km2026-3.jpg";
-import FIVEKM20264 from "@/assets/5km2026-4.jpg";
-import FIVEKM20265 from "@/assets/5km2026-5.jpg";
-import FIVEKM20266 from "@/assets/5km2026-6.jpg";
-import FIVEKM20267 from "@/assets/5km2026-7.jpg";
-import AMALIA2026 from "@/assets/amalia-2026.jpg";
-import aquaresults1 from "@/assets/aquathlon-results-1.jpg";
-import aquaresults2 from "@/assets/aquathlon-results-2.jpg";
-import aquaresults3 from "@/assets/aquathlon-results-3.jpg";
-import aquaresults4 from "@/assets/aquathlon-results-4.jpg";
-import aquaresults5 from "@/assets/aquathlon-results-5.jpg";
-import aquaresults6 from "@/assets/aquathlon-results-6.jpg";
-import aquaresults7 from "@/assets/aquathlon-results-7.jpg";
-import aquaresults8 from "@/assets/aquathlon-results-8.jpg";
-import aquaresults9 from "@/assets/aquathlon-results-9.jpg";
-import aquaresults10 from "@/assets/aquathlon-results-10.jpg";
-import resultsaqua1 from "@/assets/results-aquathlon-1.jpg";
-import resultsaqua2 from "@/assets/results-aquathlon-2.jpg";
-import resultsaqua3 from "@/assets/results-aquathlon-3.jpg";
-import resultsaqua4 from "@/assets/results-aquathlon-4.jpg";
-import resultsaqua5 from "@/assets/results-aquathlon-5.jpg";
-import resultsaqua6 from "@/assets/results-aquathlon-6.jpg";
-import dumanneville1 from "@/assets/du-manneville-1.jpg";
-import dumanneville2 from "@/assets/du-manneville-2.jpg";
-import dumanneville3 from "@/assets/du-manneville-3.jpg";
-import dumanneville4 from "@/assets/du-manneville-4.jpg";
-import dumanneville5 from "@/assets/du-manneville-5.jpg";
-import duneubourg1 from "@/assets/du-neubourg-1.jpg";
-import duneubourg9 from "@/assets/du-neubourg-9.jpg";
-import duneubourg2 from "@/assets/du-neubourg-2.jpg";
-import duneubourg3 from "@/assets/du-neubourg-3.jpg";
-import duneubourg4 from "@/assets/du-neubourg-4.jpg";
-import duneubourg5 from "@/assets/du-neubourg-5.jpg";
-import duneubourg6 from "@/assets/du-neubourg-6.jpg";
-import duneubourg7 from "@/assets/du-neubourg-7.jpg";
-import duneubourg8 from "@/assets/du-neubourg-8.jpg";
-import duneubourg10 from "@/assets/du-neubourg-10.jpg";
-import trimai20261 from "@/assets/tri-mai-2026-1.jpg";
-import trimai20262 from "@/assets/tri-mai-2026-2.jpg";
-import trimai20263 from "@/assets/tri-mai-2026-3.jpg";
-import trimai20264 from "@/assets/tri-mai-2026-4.jpg";
-import trimai20265 from "@/assets/tri-mai-2026-5.jpg";
-import triversailles1 from "@/assets/tri-versailles-1.jpg";
-import triversailles2 from "@/assets/tri-versailles-2.jpg";
-import triversailles3 from "@/assets/tri-versailles-3.jpg";
-import tritpn1 from "@/assets/tri-tpn-1.jpg";
-import tritpn2 from "@/assets/tri-tpn-2.jpg";
-import tritpn3 from "@/assets/tri-tpn-3.jpg";
-import tritpn4 from "@/assets/tri-tpn-4.jpg";
-import tritpn5 from "@/assets/tri-tpn-5.jpg";
-import tritpn6 from "@/assets/tri-tpn-6.jpg";
-import tritpn7 from "@/assets/tri-tpn-7.jpg";
-import tritpn8 from "@/assets/tri-tpn-8.jpg";
-import tritpn9 from "@/assets/tri-tpn-9.jpg";
-import tritpn10 from "@/assets/tri-tpn-10.jpg";
-import ventoux1 from "@/assets/ventoux-1.jpg";
-import ventoux2 from "@/assets/ventoux-2.jpg";
-import tricarrieres20261 from "@/assets/tri-carrieres-2026-1.jpg";
-import tricarrieres20262 from "@/assets/tri-carrieres-2026-2.jpg";
-import tricarrieres20263 from "@/assets/tri-carrieres-2026-3.jpg";
-import tricarrieres20264 from "@/assets/tri-carrieres-2026-4.jpg";
-import tricanada2026 from "@/assets/tri-canada-2026.jpg";
-import ironmantours2026 from "@/assets/ironman-tours-2026.jpg";
-import deauville2026 from "@/assets/deauville-2026.jpg";
-import sables20261 from "@/assets/sables-2026-1.jpg";
-import sables20262 from "@/assets/sables-2026-2.jpg";
-import sables20263 from "@/assets/sables-2026-3.jpg";
-import sables20264 from "@/assets/sables-2026-4.jpg";
-import sables20265 from "@/assets/sables-2026-5.jpg";
-import franceaquathlon20261 from "@/assets/france-aquathlon-2026-1.jpg";
-import franceaquathlon20262 from "@/assets/france-aquathlon-2026-2.jpg";
-import trailfred2026 from "@/assets/trail-fred-2026.jpg";
-import ironmanespagne2026 from "@/assets/ironman-espagne-2026.jpg";
+import FIVEKM20261 from "@/assets/5km2026-1.jpg"
+import FIVEKM20262 from "@/assets/5km2026-2.jpg"
+import FIVEKM20263 from "@/assets/5km2026-3.jpg"
+import FIVEKM20264 from "@/assets/5km2026-4.jpg"
+import FIVEKM20265 from "@/assets/5km2026-5.jpg"
+import FIVEKM20266 from "@/assets/5km2026-6.jpg"
+import FIVEKM20267 from "@/assets/5km2026-7.jpg"
+import AMALIA2026 from "@/assets/amalia-2026.jpg"
+import aquaresults1 from "@/assets/aquathlon-results-1.jpg"
+import aquaresults10 from "@/assets/aquathlon-results-10.jpg"
+import aquaresults2 from "@/assets/aquathlon-results-2.jpg"
+import aquaresults3 from "@/assets/aquathlon-results-3.jpg"
+import aquaresults4 from "@/assets/aquathlon-results-4.jpg"
+import aquaresults5 from "@/assets/aquathlon-results-5.jpg"
+import aquaresults6 from "@/assets/aquathlon-results-6.jpg"
+import aquaresults7 from "@/assets/aquathlon-results-7.jpg"
+import aquaresults8 from "@/assets/aquathlon-results-8.jpg"
+import aquaresults9 from "@/assets/aquathlon-results-9.jpg"
+import BnRBernay2025 from "@/assets/BnR-Bernay-2025.jpg"
+import BnRCriel2025 from "@/assets/BnR-Criel-2025.jpg"
+import CrossDuathlon2026 from "@/assets/cross-duathlon-2026.jpeg"
+import deauville2026 from "@/assets/deauville-2026.jpg"
+import DUCAEN20261 from "@/assets/DU-Caen-2026-1.jpg"
+import DUCAEN20262 from "@/assets/DU-Caen-2026-2.jpg"
+import DUCAEN20263 from "@/assets/DU-Caen-2026-3.jpg"
+import DUCAEN20264 from "@/assets/DU-Caen-2026-4.jpg"
+import DUCAEN20265 from "@/assets/DU-Caen-2026-5.jpg"
+import dumanneville1 from "@/assets/du-manneville-1.jpg"
+import dumanneville2 from "@/assets/du-manneville-2.jpg"
+import dumanneville3 from "@/assets/du-manneville-3.jpg"
+import dumanneville4 from "@/assets/du-manneville-4.jpg"
+import dumanneville5 from "@/assets/du-manneville-5.jpg"
+import duneubourg1 from "@/assets/du-neubourg-1.jpg"
+import duneubourg10 from "@/assets/du-neubourg-10.jpg"
+import duneubourg2 from "@/assets/du-neubourg-2.jpg"
+import duneubourg3 from "@/assets/du-neubourg-3.jpg"
+import duneubourg4 from "@/assets/du-neubourg-4.jpg"
+import duneubourg5 from "@/assets/du-neubourg-5.jpg"
+import duneubourg6 from "@/assets/du-neubourg-6.jpg"
+import duneubourg7 from "@/assets/du-neubourg-7.jpg"
+import duneubourg8 from "@/assets/du-neubourg-8.jpg"
+import duneubourg9 from "@/assets/du-neubourg-9.jpg"
+import franceaquathlon20261 from "@/assets/france-aquathlon-2026-1.jpg"
+import franceaquathlon20262 from "@/assets/france-aquathlon-2026-2.jpg"
+import ironmanespagne2026 from "@/assets/ironman-espagne-2026.jpg"
+import ironmantours2026 from "@/assets/ironman-tours-2026.jpg"
+import MarathonSeineEure2025 from "@/assets/marathon-seine-eure-2025.jpg"
+import resultsaqua1 from "@/assets/results-aquathlon-1.jpg"
+import resultsaqua2 from "@/assets/results-aquathlon-2.jpg"
+import resultsaqua3 from "@/assets/results-aquathlon-3.jpg"
+import resultsaqua4 from "@/assets/results-aquathlon-4.jpg"
+import resultsaqua5 from "@/assets/results-aquathlon-5.jpg"
+import resultsaqua6 from "@/assets/results-aquathlon-6.jpg"
+import Bayman2025 from "@/assets/results-bayman-2025.jpg"
+import resultsTriathlon2025 from "@/assets/results-triathlon-2025.jpg"
+import sables20261 from "@/assets/sables-2026-1.jpg"
+import sables20262 from "@/assets/sables-2026-2.jpg"
+import sables20263 from "@/assets/sables-2026-3.jpg"
+import sables20264 from "@/assets/sables-2026-4.jpg"
+import sables20265 from "@/assets/sables-2026-5.jpg"
+import SEMILISON from "@/assets/semi-lison.jpg"
+import SEMILUDO from "@/assets/semi-ludo.jpg"
+import trailfred2026 from "@/assets/trail-fred-2026.jpg"
+import tricanada2026 from "@/assets/tri-canada-2026.jpg"
+import tricarrieres20261 from "@/assets/tri-carrieres-2026-1.jpg"
+import tricarrieres20262 from "@/assets/tri-carrieres-2026-2.jpg"
+import tricarrieres20263 from "@/assets/tri-carrieres-2026-3.jpg"
+import tricarrieres20264 from "@/assets/tri-carrieres-2026-4.jpg"
+import trimai20261 from "@/assets/tri-mai-2026-1.jpg"
+import trimai20262 from "@/assets/tri-mai-2026-2.jpg"
+import trimai20263 from "@/assets/tri-mai-2026-3.jpg"
+import trimai20264 from "@/assets/tri-mai-2026-4.jpg"
+import trimai20265 from "@/assets/tri-mai-2026-5.jpg"
+import tritpn1 from "@/assets/tri-tpn-1.jpg"
+import tritpn10 from "@/assets/tri-tpn-10.jpg"
+import tritpn2 from "@/assets/tri-tpn-2.jpg"
+import tritpn3 from "@/assets/tri-tpn-3.jpg"
+import tritpn4 from "@/assets/tri-tpn-4.jpg"
+import tritpn5 from "@/assets/tri-tpn-5.jpg"
+import tritpn6 from "@/assets/tri-tpn-6.jpg"
+import tritpn7 from "@/assets/tri-tpn-7.jpg"
+import tritpn8 from "@/assets/tri-tpn-8.jpg"
+import tritpn9 from "@/assets/tri-tpn-9.jpg"
+import triversailles1 from "@/assets/tri-versailles-1.jpg"
+import triversailles2 from "@/assets/tri-versailles-2.jpg"
+import triversailles3 from "@/assets/tri-versailles-3.jpg"
+import vanessa01 from "@/assets/vanessa01.jpg"
+import vanessa02 from "@/assets/vanessa02.jpg"
+import vanessa03 from "@/assets/vanessa03.jpg"
+import ventoux1 from "@/assets/ventoux-1.jpg"
+import ventoux2 from "@/assets/ventoux-2.jpg"
+import { defineStore } from "pinia"
 
 function slugify(text) {
   return text
@@ -618,6 +621,16 @@ export const useResultsStore = defineStore("results", {
           "Ce n’était pas un jour pour réaliser un temps, mais l’essentiel est ailleurs : on préfèrera retenir l’abnégation, l’entraide, le soutien, et ces images des deux inséparables du jour franchissant côte à côte l’arrivée et de Alexandre sonnant la cloche à l’approche de minuit au cœur d’une éphémère arène rouge et noire sur la Espaina Plaza avant que le speaker ne l’accueille d’un YOU ARE AN IRONMAN qui résonnera longtemps dans sa mémoire, probablement toujours…",
         subtitle5:
           "Vincent Ratel : 844e,  104e M35-39 (01:29’/05’25/06:16’45/10’30/04:59’59), Alexis Rousselin : 845e, 95e M45-49 (01:31’56/05’461/ 06:11’45/04’50/ 05:07’46), Alexandre Lebougault : 1207e, 139e M45-49 (01:24’51/09‘37/06 :55’32/08’50/06 :40’05)",
+      },
+      {
+        title: "VANESS AVIDAN EN BONNE PLACE POUR LE CHALLENGE FÉMININ 2026!",
+        images: [vanessa01, vanessa02, vanessa03],
+        published: new Date("2026-09-16T03:24:00"),
+        subtitle1:
+          "À l'aube de la saison automnale, Vaness est 2e du challenge féminin masters, revenant après les précieux points glanés lors de sa victoire par catégorie sur le triathlon XS de Caen le 06/09 à 5 petits point de la leader Flore Gallois du Valognes Triathlon (50). ",
+        subtitle2:
+          "La performance est déjà top et atteste de la régularité et de la constante progression de la solide triple finisher Ironman.",
+        subtitle3: `Plus d'informations sur le challenge féminin de la ligue de Normandie de triathlon <a href="https://www.lntri.fr/challenge-feminin-2/?fbclid=IwcGRvZgVleHRuA2FlbQIxMABicmlkETFtektJOHJCOThqQkU2ekxMc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv0Rp81iRexaOWkyrR4TH4as-e0f_nqJ2j00a5L1RQP26zAjIFs-m6gmtd6S_aem_WzvatssmhgIoa121G_yLjQ" target="_blank" rel="noopener noreferrer">ici</a>`,
       },
     ],
   }),

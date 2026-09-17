@@ -1,25 +1,27 @@
-import { defineStore } from "pinia";
-import youngAquathlonImg from "@/assets/young-aquathlon.jpg";
-import eveilsImg from "@/assets/eveil.png";
-import bikeRunMousseaux2025 from "@/assets/bikerun-mousseaux-2025.jpg";
-import articleTriAmants2025 from "@/assets/article-tri-amants-2025.jpg";
-import marbellaDuranteau2025 from "@/assets/marbella-duranteau-2025.jpg";
-import BandRinternational2025 from "@/assets/B&RMx2025-Bâche-annonce_V2.jpg";
-import BandR2025MousseauxResults from "@/assets/BandR-mousseaux-results-2025.jpg";
-import BandR2025Evreux from "@/assets/bnr-evreux-2025.jpeg";
-import tri2amants2026 from "@/assets/tri-2-amants-2026.jpeg";
-import aquathlon2026 from "@/assets/Aqua2026-Affiche_Insta.jpg";
-import aquathlon2026aquaval from "@/assets/aquathlon2026aquaval.jpg";
-import adenorafrance2026 from "@/assets/adenora-france-2026.jpg";
-import stagejeunes20261 from "@/assets/stage-jeunes-2026-1.jpg";
-import stagejeunes20262 from "@/assets/stage-jeunes-2026-2.jpg";
-import stagejeunes20263 from "@/assets/stage-jeunes-2026-3.jpg";
-import stagejeunes20264 from "@/assets/stage-jeunes-2026-4.jpg";
-import stagejeunes20265 from "@/assets/stage-jeunes-2026-5.jpg";
-import stagejeunes20266 from "@/assets/stage-jeunes-2026-6.jpg";
-import swimrunquillet2026 from "@/assets/swimrun-quillet-2026.jpg";
-import orga20261 from "@/assets/orga-2026-1.jpg";
-import orga20262 from "@/assets/orga-2026-2.jpg";
+import amants2026 from "@/assets/2amants2026.jpg"
+import adenorafrance2026 from "@/assets/adenora-france-2026.jpg"
+import aquathlon2026 from "@/assets/Aqua2026-Affiche_Insta.jpg"
+import aquathlon2026aquaval from "@/assets/aquathlon2026aquaval.jpg"
+import articleTriAmants2025 from "@/assets/article-tri-amants-2025.jpg"
+import BandRinternational2025 from "@/assets/B&RMx2025-Bâche-annonce_V2.jpg"
+import babies2026 from "@/assets/babies-2026.jpg"
+import BandR2025MousseauxResults from "@/assets/BandR-mousseaux-results-2025.jpg"
+import bikeRunMousseaux2025 from "@/assets/bikerun-mousseaux-2025.jpg"
+import BandR2025Evreux from "@/assets/bnr-evreux-2025.jpeg"
+import eveilsImg from "@/assets/eveil.png"
+import marbellaDuranteau2025 from "@/assets/marbella-duranteau-2025.jpg"
+import orga20261 from "@/assets/orga-2026-1.jpg"
+import orga20262 from "@/assets/orga-2026-2.jpg"
+import stagejeunes20261 from "@/assets/stage-jeunes-2026-1.jpg"
+import stagejeunes20262 from "@/assets/stage-jeunes-2026-2.jpg"
+import stagejeunes20263 from "@/assets/stage-jeunes-2026-3.jpg"
+import stagejeunes20264 from "@/assets/stage-jeunes-2026-4.jpg"
+import stagejeunes20265 from "@/assets/stage-jeunes-2026-5.jpg"
+import stagejeunes20266 from "@/assets/stage-jeunes-2026-6.jpg"
+import swimrunquillet2026 from "@/assets/swimrun-quillet-2026.jpg"
+import tri2amants2026 from "@/assets/tri-2-amants-2026.jpeg"
+import youngAquathlonImg from "@/assets/young-aquathlon.jpg"
+import { defineStore } from "pinia"
 
 function slugify(text) {
   return text
@@ -242,6 +244,32 @@ export const useNewsStore = defineStore("news", {
         subtitle3:
           "📢 Et d'ici là, bien sûr, reprise des entrainements collectifs de la section adultes le 21 septembre et de l'école de Triathlon le 23 septembre.",
         published: new Date("2026-08-08T03:24:00"),
+        route: "news",
+      },
+      {
+        title: "REPRISE DE L'ÉCOLE DE TRIATHLON LE MERCREDI 23 SEPTEMBRE",
+        images: [babies2026],
+        subtitle1:
+          "Le Triathlon des 2 Amants est derrière nous, l'école de Triathlon va pouvoir réouvrir! Reprise le mercredi 23 septembre au stade Jean Rives (rue de la Garenne à Gaillon): ",
+        subtitle2: "Accueil des Éveils et Mini-Poussins débutants à 16h30 🐣🐥",
+        subtitle3: "Accueil des Benjamins et Minimes loisir à 17h 🦸‍♂️",
+        subtitle4: "Accueil des Poussins et Pupilles à 17h15 🐧🐵",
+        subtitle5:
+          "Pour toute question sur l'organisation des créneaux d'entrainement, merci de vous adresser au secrétariat de l'école de tri à 👉 ecoledetri.tvt@gmail.com",
+        published: new Date("2026-09-16T03:24:00"),
+        route: "news",
+      },
+      {
+        title: "Photos du triathlon des 2 amants 2026",
+        images: [amants2026],
+        subtitle1: "Super édition cette année encore",
+        subtitle2:
+          "Vous pouvez retrouver les photos de la part de 'Drive Club / Martin Lizer @martin.lizer  & Emmanuel Bloch (La Dépêche de Louviers - Actus.fr)' <a href='https://drive.google.com/drive/folders/1mt1ZKrkBEdhpq4ll0U8EnT_CeKqyGQNJ?fbclid=IwY2xjawUYdS9wZG9mBWV4dG4DYWVtAjEwAGJyaWQRMW16S0k4ckI5OGpCRTZ6TExzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEe6oRGs0KNlSzR-kitkba8hAE799O0hZq6PkRr-8kWO5wq6LiuMVM9XLXZP5Q_aem_JJuduNEJnZ4OaW_w8KPa4w' target='_blank' rel='noopener noreferrer'>ici</a>",
+        subtitle3:
+          "Et encore de la part de 'Lucie jour' <a href='https://photos.google.com/share/AF1QipPupt79--WSRZ2a3haQV79j5eh4oMA2pHznOM5od0AXInFXS59ca-kY_AofUcnsKw?key=czJEc3ozRTh4cl9qdGM5ZkdoSW1CSWFEWEtVM3pn' target='_blank' rel='noopener noreferrer'>ici</a>",
+        subtitle4:
+          "Ou même encore de la part de CB2000 <a href='http://cb2000.fr/reportages/Reportages%202026/09-13%20Triathlon_des_2_Amants/page-triathlon_des_2_amants-2026.htm' target='_blank' rel='noopener noreferrer'>ici</a>",
+        published: new Date("2026-09-17T03:24:00"),
         route: "news",
       },
     ],
