@@ -89,6 +89,12 @@ import vanessa02 from "@/assets/vanessa02.jpg"
 import vanessa03 from "@/assets/vanessa03.jpg"
 import ventoux1 from "@/assets/ventoux-1.jpg"
 import ventoux2 from "@/assets/ventoux-2.jpg"
+import weFinSeptembre202601 from "@/assets/we-fin-septembre-01.jpg"
+import weFinSeptembre202602 from "@/assets/we-fin-septembre-02.jpg"
+import weFinSeptembre202603 from "@/assets/we-fin-septembre-03.jpg"
+import weFinSeptembre202604 from "@/assets/we-fin-septembre-04.jpg"
+import weFinSeptembre202605 from "@/assets/we-fin-septembre-05.jpg"
+import weFinSeptembre202606 from "@/assets/we-fin-septembre-06.jpg"
 import { defineStore } from "pinia"
 
 function slugify(text) {
@@ -631,6 +637,37 @@ export const useResultsStore = defineStore("results", {
         subtitle2:
           "La performance est déjà top et atteste de la régularité et de la constante progression de la solide triple finisher Ironman.",
         subtitle3: `Plus d'informations sur le challenge féminin de la ligue de Normandie de triathlon <a href="https://www.lntri.fr/challenge-feminin-2/?fbclid=IwcGRvZgVleHRuA2FlbQIxMABicmlkETFtektJOHJCOThqQkU2ekxMc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv0Rp81iRexaOWkyrR4TH4as-e0f_nqJ2j00a5L1RQP26zAjIFs-m6gmtd6S_aem_WzvatssmhgIoa121G_yLjQ" target="_blank" rel="noopener noreferrer">ici</a>`,
+      },
+      {
+        title: "VANESS AVIDAN EN BONNE PLACE POUR LE CHALLENGE FÉMININ 2026!",
+        images: [vanessa01, vanessa02, vanessa03],
+        published: new Date("2026-09-16T03:24:00"),
+        subtitle1:
+          "À l'aube de la saison automnale, Vaness est 2e du challenge féminin masters, revenant après les précieux points glanés lors de sa victoire par catégorie sur le triathlon XS de Caen le 06/09 à 5 petits point de la leader Flore Gallois du Valognes Triathlon (50). ",
+        subtitle2:
+          "La performance est déjà top et atteste de la régularité et de la constante progression de la solide triple finisher Ironman.",
+        subtitle3: `Plus d'informations sur le challenge féminin de la ligue de Normandie de triathlon <a href="https://www.lntri.fr/challenge-feminin-2/?fbclid=IwcGRvZgVleHRuA2FlbQIxMABicmlkETFtektJOHJCOThqQkU2ekxMc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv0Rp81iRexaOWkyrR4TH4as-e0f_nqJ2j00a5L1RQP26zAjIFs-m6gmtd6S_aem_WzvatssmhgIoa121G_yLjQ" target="_blank" rel="noopener noreferrer">ici</a>`,
+      },
+      {
+        title: "LES TURQUOISES DE RETOUR À LA COMPÉTITION",
+        images: [
+          weFinSeptembre202601,
+          weFinSeptembre202602,
+          weFinSeptembre202603,
+          weFinSeptembre202604,
+          weFinSeptembre202605,
+          weFinSeptembre202606,
+        ],
+        published: new Date("2026-09-30T03:24:00"),
+        subtitle1:
+          "Ca y est, les trifonctions sont ressorties après un mois de septembre largement consacré à l’organisation du Triathlon des 2 Amants et ce, dès le dimanche 20 septembre, trois de nos athlètes ont remis le bleu turquoise de chauffe sur le triathlon de Granville dont c’était la 2e édition.",
+        subtitle2:
+          "Engagés sur le format M, Cyril Fournol Didier Soutif et Thomas Delcourt ont pu goûter au parcours nata en Manche, au parcours « casse-pattes» jusqu’à Jullouville et à une CAP urbaine dans le vieux Granville.",
+        subtitle3: `Thomas Delcourt fait un joli top 100 et termine 93e en 02:25’55 (13e V1). Didier, pour ainsi dire « à la maison » boucle le parcours en 02:46’23 et termine 425e , tandis que Cyril en termine en 03 :34’58 à la 931e place.`,
+        subtitle4: `Le TVT étant représenté sur (presque) toutes les courses. La belle perf’ du week-end est à mettre au crédit de Cyprien Malherbe qui pour sa reprise de la compétition remporte le XS en 36'49 devant une meute de jeunes loups affamés et grâce à une CAP 2 à haute intensité sur les 2,5km et devançant au final Axel Dauphin, en tête depuis la partie vélo et qui a un peu marqué le coup sur la fin, réalisant toutefois une excellente course lui aussi.`,
+        subtitle5: `Sur le S, Vincent Eveno entre dans le Top 20 avec un temps de 01 :17’40 tandis que Vincent Boinet et Éric Dorveaux se sont livré un beau duel qui finalement a tourné à l’avantage du premier pour 44’. Saluons également la présence de Olivier Caldier et Jean-Marie Rosse sur ce même format qui terminent à la 48e et à la 50e place.`,
+        subtitle6: `Sur la  6-9ans, Gaïa Le Merrer, nouvellement licenciée, termine 6e de la course suivie de près par Sofia Garrido en 8e place, ce qui leur aura donné l’occasion de monter sur le podium à la 2e et 3eme place, Albane Bourgeois complétant ce podium filles. La petite sœur, Madison Le Merrer, obtient elle la 10e place. Toutes trois ont réalisé un très bel enchaînement, tout comme  Luka Pezetta 9e et Timéo Rosse et Paul Rocher, respectivement 18e et 20e de la course pupilles.`,
+        subtitle7: `Davantage de 📸 de Jacky Courtin sur son site <a href="http://cb2000.fr/reportages/Reportages%202026/09-27%20Duathlon_St%20Marcel/page-duathlon_des_lions_saint_marcel-2026.htm" target="_blank" rel="noopener noreferrer">CB2000</a> !`,
       },
     ],
   }),
