@@ -5,6 +5,16 @@ import FIVEKM20264 from "@/assets/5km2026-4.jpg"
 import FIVEKM20265 from "@/assets/5km2026-5.jpg"
 import FIVEKM20266 from "@/assets/5km2026-6.jpg"
 import FIVEKM20267 from "@/assets/5km2026-7.jpg"
+import acbb202601 from "@/assets/acbb-2026-01.jpg"
+import acbb202602 from "@/assets/acbb-2026-02.jpg"
+import acbb202603 from "@/assets/acbb-2026-03.jpg"
+import acbb202604 from "@/assets/acbb-2026-04.jpg"
+import acbb202605 from "@/assets/acbb-2026-05.jpg"
+import acbb202606 from "@/assets/acbb-2026-06.jpg"
+import acbb202607 from "@/assets/acbb-2026-07.jpg"
+import acbb202608 from "@/assets/acbb-2026-08.jpg"
+import acbb202609 from "@/assets/acbb-2026-09.jpg"
+import acbb202610 from "@/assets/acbb-2026-10.jpg"
 import AMALIA2026 from "@/assets/amalia-2026.jpg"
 import aquaresults1 from "@/assets/aquathlon-results-1.jpg"
 import aquaresults10 from "@/assets/aquathlon-results-10.jpg"
@@ -668,6 +678,29 @@ export const useResultsStore = defineStore("results", {
         subtitle5: `Sur le S, Vincent Eveno entre dans le Top 20 avec un temps de 01 :17’40 tandis que Vincent Boinet et Éric Dorveaux se sont livré un beau duel qui finalement a tourné à l’avantage du premier pour 44’. Saluons également la présence de Olivier Caldier et Jean-Marie Rosse sur ce même format qui terminent à la 48e et à la 50e place.`,
         subtitle6: `Sur la  6-9ans, Gaïa Le Merrer, nouvellement licenciée, termine 6e de la course suivie de près par Sofia Garrido en 8e place, ce qui leur aura donné l’occasion de monter sur le podium à la 2e et 3eme place, Albane Bourgeois complétant ce podium filles. La petite sœur, Madison Le Merrer, obtient elle la 10e place. Toutes trois ont réalisé un très bel enchaînement, tout comme  Luka Pezetta 9e et Timéo Rosse et Paul Rocher, respectivement 18e et 20e de la course pupilles.`,
         subtitle7: `Davantage de 📸 de Jacky Courtin sur son site <a href="http://cb2000.fr/reportages/Reportages%202026/09-27%20Duathlon_St%20Marcel/page-duathlon_des_lions_saint_marcel-2026.htm" target="_blank" rel="noopener noreferrer">CB2000</a> !`,
+      },
+      {
+        title:
+          "RELAIS MIXTE DE L’ACBB : UN PODIUM POUR LE TVT ET UN PETIT AIR DE PARIS 2024…",
+        images: [
+          acbb202608,
+          acbb202609,
+          acbb202602,
+          acbb202601,
+          acbb202603,
+          acbb202604,
+          acbb202605,
+          acbb202606,
+          acbb202607,
+          acbb202610,
+        ],
+        published: new Date("2026-10-06T03:24:00"),
+        subtitle1:
+          "… le haut niveau en moins, bien sûr ! Toutefois, cette 1ere édition du triathlon relais mixte de l’AC Boulogne-Billancourt Triathlon a tenu toute ces promesses. Une nata insolite dans la Seine avec pour décor le parc nautique de l’île Monsieur, des parcours vélo et à pied évidemment urbains et ultra compact pour davantage de spectacle et une 5e place au scratch et un podium adultes pour le quatuor Lison Malherbe, Alex Rousselin, Adé Petit et Cyprien Malherbe. Ce format ultra court est indéniablement à l’avantage des jeunes.",
+        subtitle2:
+          "La seconde équipe engagée était composée de Marie-Agnès Lecuyer, David Richou, Margot Rousselin et Vincent Petit.",
+        subtitle3: `En tous cas, une première à Port-Legrand et une découverte ultra fun pour le TVT et le plein de plaisir et de sourires. Une première en appelant d’autres sur lesquelles le Team Val’Eure Triathlon reviendra avec plaisir.`,
+        subtitle4: `Un grand merci à l’ACBB pour l’organisation simple mais conviviale et tellement plaisante et à <a href="https://www.instagram.com/thierryparenti/?fbclid=IwZXh0bgNhZW0CMTAAcGRvZgVicmlkETF1OVAzdUY5aGhzbUFMVXdTc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv9Usj8yqF0J3gOmQoWCq859QdC873VX3uFCF8Qm9nO5vSfvi9DgJfIq4EMm_aem_AxwVhoGczs3CewI0f4KBqQ" target="_blank" rel="noopener noreferrer">@thierryparenti</a> et <a href="https://www.instagram.com/ericcatherine.photographe/?fbclid=IwY2xjawU0ezVleHRuA2FlbQIxMABwZG9mBWJyaWQRMXU5UDN1RjloaHNtQUxVd1NzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeVLDteUWoDtPz11BZiUe2sD7xCkxR0c-PKAX5grrVNsl8kz4_Xx3UqRLupnA_aem_0um5I3oGGbKAKUEmUs5adw" target="_blank" rel="noopener noreferrer">@ericcatherine.photographe</a> pour les magnifiques 📸 !`,
       },
     ],
   }),
