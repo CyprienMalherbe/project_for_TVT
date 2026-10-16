@@ -94,6 +94,7 @@ import tritpn9 from "@/assets/tri-tpn-9.jpg"
 import triversailles1 from "@/assets/tri-versailles-1.jpg"
 import triversailles2 from "@/assets/tri-versailles-2.jpg"
 import triversailles3 from "@/assets/tri-versailles-3.jpg"
+import ultratrailjura from "@/assets/ultra-trail-jura.jpg"
 import vanessa01 from "@/assets/vanessa01.jpg"
 import vanessa02 from "@/assets/vanessa02.jpg"
 import vanessa03 from "@/assets/vanessa03.jpg"
@@ -701,6 +702,17 @@ export const useResultsStore = defineStore("results", {
           "La seconde équipe engagée était composée de Marie-Agnès Lecuyer, David Richou, Margot Rousselin et Vincent Petit.",
         subtitle3: `En tous cas, une première à Port-Legrand et une découverte ultra fun pour le TVT et le plein de plaisir et de sourires. Une première en appelant d’autres sur lesquelles le Team Val’Eure Triathlon reviendra avec plaisir.`,
         subtitle4: `Un grand merci à l’ACBB pour l’organisation simple mais conviviale et tellement plaisante et à <a href="https://www.instagram.com/thierryparenti/?fbclid=IwZXh0bgNhZW0CMTAAcGRvZgVicmlkETF1OVAzdUY5aGhzbUFMVXdTc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv9Usj8yqF0J3gOmQoWCq859QdC873VX3uFCF8Qm9nO5vSfvi9DgJfIq4EMm_aem_AxwVhoGczs3CewI0f4KBqQ" target="_blank" rel="noopener noreferrer">@thierryparenti</a> et <a href="https://www.instagram.com/ericcatherine.photographe/?fbclid=IwY2xjawU0ezVleHRuA2FlbQIxMABwZG9mBWJyaWQRMXU5UDN1RjloaHNtQUxVd1NzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeVLDteUWoDtPz11BZiUe2sD7xCkxR0c-PKAX5grrVNsl8kz4_Xx3UqRLupnA_aem_0um5I3oGGbKAKUEmUs5adw" target="_blank" rel="noopener noreferrer">@ericcatherine.photographe</a> pour les magnifiques 📸 !`,
+      },
+      {
+        title: "L'HOMME QUI MET DU RELIEF DANS SA VIE...",
+        images: [ultratrailjura],
+        published: new Date("2026-10-13T03:24:00"),
+        subtitle1:
+          "La Beauce, le désert de l'Acatama, les Pays-bas ne sont définitivement pas des destinations pour lui. Le truc de Fred Dutheil, c'est le dénivelé.",
+        subtitle2:
+          "Après le Restonica Trail en juillet, il a remis le couvert début octobre, cette fois accompagné de la relève, avec l'Ultra trail des montagnes du Jura sur le format de 75km et 2800m de D+.",
+        subtitle3: `Un objectif moins de 13h atteint et une place de 34e age group pour clore une saison riche en expériences, en paysages d'exception et en dépassement de soi.`,
+        subtitle4: `Bravo, Fred!`,
       },
     ],
   }),

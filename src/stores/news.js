@@ -1,5 +1,6 @@
 import amants2026 from "@/assets/2amants2026.jpg"
 import adenorafrance2026 from "@/assets/adenora-france-2026.jpg"
+import AG2026 from "@/assets/AG-2026.jpg"
 import aquathlon2026 from "@/assets/Aqua2026-Affiche_Insta.jpg"
 import aquathlon2026aquaval from "@/assets/aquathlon2026aquaval.jpg"
 import articleTriAmants2025 from "@/assets/article-tri-amants-2025.jpg"
@@ -270,6 +271,25 @@ export const useNewsStore = defineStore("news", {
         subtitle4:
           "Ou même encore de la part de CB2000 <a href='http://cb2000.fr/reportages/Reportages%202026/09-13%20Triathlon_des_2_Amants/page-triathlon_des_2_amants-2026.htm' target='_blank' rel='noopener noreferrer'>ici</a>",
         published: new Date("2026-09-17T03:24:00"),
+        route: "news",
+      },
+      {
+        title:
+          "ASSEMBLÉE GÉNÉRALE 2026 : UN NOUVEAU CHAPITRE POUR LE TEAM VAL'EURE TRIATHLON !",
+        images: [AG2026],
+        subtitle1:
+          "Vendredi s'est déroulée l'assemblée générale ordinaire du club, marquée par un changement de présidence puisque que Cynthia Suard, historique du club s'il en est, à l'origine de sa création avec le concours de son conjoint Mickaël, a décidé de cesser ses activités au sein de l'association, souhaitant se consacrer désormais à d'autres projets.",
+        subtitle2:
+          "L'équipe du comité directeur est reconduite et intègre en son sein Guy Boulnois comme 9e membre. Elle aura pour tâche de poursuivre la politique sportive initiée ces dernières saisons qui a permis de confirmer le club  - grâce à son école de triathlon désormais ⭐️⭐️ animée par cinq entraîneurs diplômés - comme club formateur et hisser - grâce à ses trois épreuves jalonnant la saison sportive - au rang de club organisateur.",
+        subtitle3:
+          "Aussi, sans plus de suspens, nous avons le grand plaisir de vous annoncer que c'est  Margot Delaunay qui reprend le flambeau de la présidence. Déjà membre du bureau les saisons précédentes, rompue aux aspects administratifs dans le milieu associatif, elle était la candidate naturelle et devient ainsi la 3e présidente de rang au TVT, signe que la préoccupation de la féminisation concerne également l'encadrement, ce dont nous ne pouvons que nous réjouir.",
+        subtitle4:
+          "Un nouveau chapitre s'ouvre donc au Team Val'Eure Triathlon. Un immense merci à Mickaël et à Cynthia pour leur implication sans relâche durant ces treize longues années. Qu'ils soient rassurés, ils laissent un club florissant, entre de bonnes mains. Les valeurs de goût de l'effort, de recherche de performance, de solidarité et de convivialité continueront à y être cultivées. Bonne continuation à eux et bonne saison au TVT !",
+        subtitle5:
+          "Bureau : Margot Delaunay, présidente. Vincent Petit, trésorier et entraîneur (BF2). Élise Rousselin, secrétaire et entraîneure (BF2)",
+        subtitle6:
+          "Membres du comité directeur : Alexandre Lebougault, Perrine Ratel, Guy Boulnois, Vincent Ratel, entraîneur (BF2), Margot Rousselin, entraîneure (BF3), Alexis Rousselin, entraîneur principal (BF3)",
+        published: new Date("2026-10-12T03:24:00"),
         route: "news",
       },
     ],
