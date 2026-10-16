@@ -1,46 +1,58 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from "vue-router"
 
 // Pages
-import Home from '../views/Home.vue'
-import School from '../views/School.vue'
-import Contact from '../views/Contact.vue'
-import Adults from '../views/Adults.vue'
-import Events from '../views/Events.vue'
-import Licenses from '../views/Licenses.vue'
-import TrainingSchedule from '@/views/TrainingSchedule.vue'
-import Results from '@/views/Results.vue'
-import ResultsDetail from '@/views/ResultsDetail.vue'
-import Chart from '@/views/Chart.vue'
-import News from '@/views/News.vue'
-import NewsDetail from '@/views/NewsDetail.vue'
+import Chart from "@/views/Chart.vue"
+import Graphs from "@/views/Graphs.vue"
+import News from "@/views/News.vue"
+import NewsDetail from "@/views/NewsDetail.vue"
+import Results from "@/views/Results.vue"
+import ResultsDetail from "@/views/ResultsDetail.vue"
+import TrainingSchedule from "@/views/TrainingSchedule.vue"
+import Adults from "../views/Adults.vue"
+import Contact from "../views/Contact.vue"
+import Events from "../views/Events.vue"
+import Home from "../views/Home.vue"
+import Licenses from "../views/Licenses.vue"
+import School from "../views/School.vue"
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/school', name: 'School', component: School },
-  { path: '/results', name: 'Results', component: Results },
-  { path: '/results/:slug', name: 'ResultsDetail', component: ResultsDetail, props: true },
-  { path: '/chart', name: 'Chart', component: Chart },
-  { path: '/adults', name: 'Adults', component: Adults },
-  { path: '/events', name: 'Events', component: Events },
-  { path: '/licenses', name: 'Licenses', component: Licenses },
-  { path: '/contact', name: 'Contact', component: Contact },
-  { path: '/training', name: 'Training', component: TrainingSchedule },
-  { path: '/news', name: 'News', component: News },
-  { path: '/news/:slug', name: 'NewsDetail', component: NewsDetail, props: true },
-]
+  { path: "/", name: "Home", component: Home },
+  { path: "/school", name: "School", component: School },
+  { path: "/results", name: "Results", component: Results },
+  {
+    path: "/results/:slug",
+    name: "ResultsDetail",
+    component: ResultsDetail,
+    props: true,
+  },
+  { path: "/chart", name: "Chart", component: Chart },
+  { path: "/adults", name: "Adults", component: Adults },
+  { path: "/events", name: "Events", component: Events },
+  { path: "/graphs", name: "Graphs", component: Graphs },
+  { path: "/licenses", name: "Licenses", component: Licenses },
+  { path: "/contact", name: "Contact", component: Contact },
+  { path: "/training", name: "Training", component: TrainingSchedule },
+  { path: "/news", name: "News", component: News },
+  {
+    path: "/news/:slug",
+    name: "NewsDetail",
+    component: NewsDetail,
+    props: true,
+  },
+];
 
 const router = createRouter({
-  history: createWebHashHistory('/'),
+  history: createWebHashHistory("/"),
   routes,
   scrollBehavior(to, from, savedPosition) {
     // si navigation avec "back" ou "forward"
     if (savedPosition) {
-      return savedPosition
+      return savedPosition;
     } else {
       // sinon toujours en haut de la page
-      return { top: 0 }
+      return { top: 0 };
     }
-  }
-})
+  },
+});
 
-export default router
+export default router;

@@ -650,16 +650,6 @@ export const useResultsStore = defineStore("results", {
         subtitle3: `Plus d'informations sur le challenge féminin de la ligue de Normandie de triathlon <a href="https://www.lntri.fr/challenge-feminin-2/?fbclid=IwcGRvZgVleHRuA2FlbQIxMABicmlkETFtektJOHJCOThqQkU2ekxMc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv0Rp81iRexaOWkyrR4TH4as-e0f_nqJ2j00a5L1RQP26zAjIFs-m6gmtd6S_aem_WzvatssmhgIoa121G_yLjQ" target="_blank" rel="noopener noreferrer">ici</a>`,
       },
       {
-        title: "VANESS AVIDAN EN BONNE PLACE POUR LE CHALLENGE FÉMININ 2026!",
-        images: [vanessa01, vanessa02, vanessa03],
-        published: new Date("2026-09-16T03:24:00"),
-        subtitle1:
-          "À l'aube de la saison automnale, Vaness est 2e du challenge féminin masters, revenant après les précieux points glanés lors de sa victoire par catégorie sur le triathlon XS de Caen le 06/09 à 5 petits point de la leader Flore Gallois du Valognes Triathlon (50). ",
-        subtitle2:
-          "La performance est déjà top et atteste de la régularité et de la constante progression de la solide triple finisher Ironman.",
-        subtitle3: `Plus d'informations sur le challenge féminin de la ligue de Normandie de triathlon <a href="https://www.lntri.fr/challenge-feminin-2/?fbclid=IwcGRvZgVleHRuA2FlbQIxMABicmlkETFtektJOHJCOThqQkU2ekxMc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHv0Rp81iRexaOWkyrR4TH4as-e0f_nqJ2j00a5L1RQP26zAjIFs-m6gmtd6S_aem_WzvatssmhgIoa121G_yLjQ" target="_blank" rel="noopener noreferrer">ici</a>`,
-      },
-      {
         title: "LES TURQUOISES DE RETOUR À LA COMPÉTITION",
         images: [
           weFinSeptembre202601,
