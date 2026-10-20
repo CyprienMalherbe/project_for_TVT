@@ -23,68 +23,47 @@ export default {
       cyclingDurations: [
         { key: 'p1s', label: '1s' },
         { key: 'p5s', label: '5s' },
-        { key: 'p15s', label: '15s' },
+        { key: 'p20s', label: '20s' },
         { key: 'p30s', label: '30s' },
         { key: 'p1m', label: '1min' },
+        { key: 'p2m', label: '2min' },
         { key: 'p5m', label: '5min' },
         { key: 'p20m', label: '20min' },
         { key: 'p1h', label: '1h' }
       ],
       runningDistances: [
-        { key: 'd200m', label: '200m' },
-        { key: 'd400m', label: '400m' },
         { key: 'd1k', label: '1 km' },
-        { key: 'd3k', label: '3 km' },
         { key: 'd5k', label: '5 km' },
         { key: 'd10k', label: '10 km' },
         { key: 'd21k', label: 'Semi-Marathon' },
         { key: 'd42k', label: 'Marathon' }
       ],
       swimmingDistances: [
-        { key: 's50m', label: '50m' },
         { key: 's100m', label: '100m' },
-        { key: 's200m', label: '200m' },
         { key: 's400m', label: '400m' },
-        { key: 's800m', label: '800m' },
-        { key: 's1500m', label: '1500m' },
-        { key: 's1900m', label: '1900m (Half)' },
-        { key: 's3800m', label: '3800m (Ironman)' }
+        { key: 's750m', label: '750m' },
+        { key: 's1000m', label: '1000m' },
+        { key: 's1500m', label: '1500m' }
       ],
 
       // --- LISTE UNIQUE DES ATHLÈTES ET DONNÉES ---
       athletes: [
         {
           id: 1,
-          name: 'Cynthia Suard',
+          name: 'Cyprien Malherbe',
           selected: true,
-          cycling: { p1s: 920, p5s: 850, p15s: 710, p30s: 580, p1m: 450, p5m: 320, p20m: 260, p1h: 220 },
-          running: { d200m: 24.5, d400m: 22.0, d1k: 18.5, d3k: 16.2, d5k: 15.5, d10k: 14.8, d21k: 13.9, d42k: 12.8 },
-          swimming: { s50m: 38, s100m: 82, s200m: 88, s400m: 93, s800m: 97, s1500m: 102, s1900m: 105, s3800m: 110 }
+          cycling: { p1s: 1201, p5s: 1156, p20s: 995, p30s: 885, p1m: 574, p2m: 431, p5m: 375, p20m: 281, p1h: 244 },
+          running: { d1k: 18.75, d5k: 17.34, d10k: 16.08, d21k: 15.72 },
+          swimming: { s100m: 67, s400m: 92, s750m: 97, s1000m: 98, s1500m: 101 }
         },
         {
           id: 2,
           name: 'Alexis Rousselin',
           selected: true,
-          cycling: { p1s: 1150, p5s: 1020, p15s: 880, p30s: 720, p1m: 540, p5m: 410, p20m: 340, p1h: 295 },
-          running: { d200m: 28.0, d400m: 25.2, d1k: 21.0, d3k: 18.8, d5k: 18.0, d10k: 17.2, d21k: 16.3, d42k: 15.2 },
-          swimming: { s50m: 32, s100m: 70, s200m: 74, s400m: 78, s800m: 81, s1500m: 85, s1900m: 88, s3800m: 92 }
+          cycling: { p1s: 1150, p5s: 1020, p20s: 880, p30s: 720, p1m: 540, p2m: 431, p5m: 410, p20m: 340, p1h: 295 },
+          running: { d1k: 21.0, d5k: 18.0, d10k: 17.2, d21k: 16.3, d42k: 15.2 },
+          swimming: { s100m: 70, s400m: 78, s750m: 81, s1000m: 83, s1500m: 85 }
         },
-        {
-          id: 3,
-          name: 'Vincent Petit',
-          selected: false,
-          cycling: { p1s: 1050, p5s: 940, p15s: 790, p30s: 640, p1m: 490, p5m: 370, p20m: 305, p1h: 265 },
-          running: { d200m: 26.0, d400m: 23.5, d1k: 19.5, d3k: 17.2, d5k: 16.5, d10k: 15.6, d21k: 14.8, d42k: 13.8 },
-          swimming: { s50m: 35, s100m: 76, s200m: 80, s400m: 84, s800m: 88, s1500m: 92, s1900m: 95, s3800m: 100 }
-        },
-        {
-          id: 4,
-          name: 'Mickael Suard',
-          selected: false,
-          cycling: { p1s: 1200, p5s: 1080, p15s: 890, p30s: 710, p1m: 520, p5m: 395, p20m: 325, p1h: 280 },
-          running: { d200m: 27.5, d400m: 24.8, d1k: 20.2, d3k: 18.0, d5k: 17.2, d10k: 16.4, d21k: 15.5, d42k: 14.2 },
-          swimming: { s50m: 34, s100m: 73, s200m: 78, s400m: 82, s800m: 86, s1500m: 90, s1900m: 93, s3800m: 98 }
-        }
       ]
     }
   },
