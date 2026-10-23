@@ -9,6 +9,8 @@ import babies2026 from "@/assets/babies-2026.jpg"
 import BandR2025MousseauxResults from "@/assets/BandR-mousseaux-results-2025.jpg"
 import bikeRunMousseaux2025 from "@/assets/bikerun-mousseaux-2025.jpg"
 import BandR2025Evreux from "@/assets/bnr-evreux-2025.jpeg"
+import byeDuranteau01 from "@/assets/bye-duranteau-01.jpg"
+import byeDuranteau02 from "@/assets/bye-duranteau-02.jpg"
 import eveilsImg from "@/assets/eveil.png"
 import marbellaDuranteau2025 from "@/assets/marbella-duranteau-2025.jpg"
 import orga20261 from "@/assets/orga-2026-1.jpg"
@@ -290,6 +292,20 @@ export const useNewsStore = defineStore("news", {
         subtitle6:
           "Membres du comité directeur : Alexandre Lebougault, Perrine Ratel, Guy Boulnois, Vincent Ratel, entraîneur (BF2), Margot Rousselin, entraîneure (BF3), Alexis Rousselin, entraîneur principal (BF3)",
         published: new Date("2026-10-12T03:24:00"),
+        route: "news",
+      },
+      {
+        title: "BONNE ROUTE, CHAMPION !",
+        images: [byeDuranteau01, byeDuranteau02],
+        subtitle1:
+          "Pendant de nombreuses saisons, Nicolas Duranteau a été une, sinon la figure du club et a porté haut ses couleurs noires et turquoise, sur les courses régionales, au sein des équipes de Grand Prix jusqu'en demi-finale nationale ou sur Ironman 70.3.",
+        subtitle2:
+          "Nico fait aujourd'hui le choix de nous quitter et portera la saison prochaine les couleurs du Triathlon Pays du Neubourg, dont le projet ambitieux de constituer une équipe de Grand Prix compétitive l'a incité à sauter le pas.",
+        subtitle3:
+          "Il part aujourd'hui, comme avant lui d'autres noms qu'on ne peut pas ne pas associer à une génération dorée. Ceux de Yann Duval, Julien Bourdet, Jérôme Rougier et de toutes celles et tous ceux qui ont forgé l'image de la performance au sein TVT. Un chapitre se clôt.",
+        subtitle4:
+          "Un autre, passionnant s'ouvre pour lui et son club de coeur lui souhaite le meilleur. Un autre s'ouvre également  pour le Team Val'Eure Triathlon. À nous de faire en sorte de l'écrire avec passion.",
+        published: new Date("2026-10-22T03:24:00"),
         route: "news",
       },
     ],
